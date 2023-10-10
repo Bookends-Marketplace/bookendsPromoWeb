@@ -8,7 +8,7 @@ export default function Home() {
       <h1 className='align-center text-center text-white ease-linear duration-75 text-black text-2xl font-bold'>
         Waste not, sell more
       </h1>
-      <h1 className='align-center text-center text-white text-4xl ease-linear duration-100 font-bold'>
+      <h1 className='align-center text-center text-white text-4xl ease-linear duration-100 font-bold mb-8'>
         Bookends Marketplace
       </h1>
 
@@ -18,15 +18,11 @@ export default function Home() {
         width='0'
         height='0'
         sizes='100vw'
-        className='w-2/3 h-auto p-6'
+        className='w-1/2 h-auto m-auto'
       />
 
-      <p className='text-center text-black font-bold'>
-        Bookends Marketplace is a place to buy and sell any production relatedv
-        items. Sign up for our newsletter to stay up to date on our launch. We
-        will never share your email. We will never send you spam. We will never
-        sell your email. We will never send you anything unrelated to Bookends
-        Marketplace.
+      <p className='text-center text-black font-bold m-8'>
+        Bookends Marketplace is a place to buy and sell any production related items. Sign up for our newsletter to stay up to date on our launch. We will never share your email. We will never send you spam. We will never sell your email. We will never send you anything unrelated to Bookends Marketplace.
       </p>
 
       <form>
