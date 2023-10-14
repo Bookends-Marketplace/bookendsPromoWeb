@@ -4,36 +4,53 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className='flex-col align-center items-center justify-center m-24 '>
-      <h1 className='align-center text-center text-white ease-linear duration-75 text-black text-2xl font-bold'>
-        Waste not, sell more
-      </h1>
-      <h1 className='align-center text-center text-white text-4xl ease-linear duration-100 font-bold mb-8'>
-        Bookends Marketplace
-      </h1>
+    <main className='flex'>
+      <div className='w-[9vw]'></div>
+      <div className='flex flex-col h-screen justify-around w-4/9'>
+        <div className='flex-grow mt-4'>
+        <Image
+          src='/images/logo1.png'
+          alt='bookends logo image'
+          width='124'
+          height='124'
+          sizes='100vw'
+        />
+        </div>
+        <h1 className='text-black text-9xl font-extrabold flex-grow mb-14'>Bookends</h1>
+        <h1 className='text-5xl font-bold mb-3'>Create. Save. Sustain.</h1>
+        <h1 className='text-5xl font-light flex-grow'>
+          Your Second-Hand Creative Marketplace.
+        </h1>
 
-      <Image
-        src='/images/bookends1.png'
-        alt='bookends demo image'
-        width='0'
-        height='0'
-        sizes='100vw'
-        className='w-1/2 h-auto m-auto'
-      />
+        <form className='mb-auto flex-grow mb-4'>
+            <input
+              className='placeholder-black placeholder:font-light placeholder:text-5xl px-4 py-6 rounded-[39px] w-[94%] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-4xl'
+              type='email'
+              placeholder='Secure Early Access: Join the waitlist!'
+            />
+        </form>
+      </div>
 
-      <p className='text-center text-black font-bold m-8'>
-        Bookends Marketplace is a place to buy and sell any production related items. Sign up for our newsletter to stay up to date on our launch. We will never share your email. We will never send you spam. We will never sell your email. We will never send you anything unrelated to Bookends Marketplace.
-      </p>
-
-      <form>
-        <div className=' flex flex-col items-center text-black-400 focus-within:text-black-600 text-black p-6'>
-          <input
-            className='ml-2 px-4 py-2 border rounded w-1/2 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent'
-            type='email'
-            placeholder='user@bookends.com'
+      <div className='flex-1  no-scrollbar w-4/9'>
+        <div className='flex static'>
+          <Image
+            src='/images/iPhone14.png'
+            alt='bookends demo image iphone14'
+            width='349'
+            height='716'
+            // sizes='100vw'
+            className='absolute ml-8 bottom-4 drop-shadow-4xl'
+          />
+          <Image
+            src='/images/iPhone13.png'
+            alt='bookends demo image iphone13'
+            width='349'
+            height='716'
+            // sizes='100vw'
+            className='absolute ml-2 -top-[14%] -right-[138px] drop-shadow-4xl'
           />
         </div>
-      </form>
+      </div>
     </main>
   );
 }
