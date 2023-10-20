@@ -7,27 +7,34 @@ export default function Home() {
     <main className='flex'>
       <div className='w-[9vw]'></div>
       <div className='flex flex-col h-screen justify-around w-4/9'>
-        <div className='flex-grow mt-4'>
-        <Image
-          src='/images/logo1.png'
-          alt='bookends logo image'
-          width='124'
-          height='124'
-          sizes='100vw'
-        />
+        <div className='flex mt-6 mb-6'>
+          <Image
+            src='/images/logo1.png'
+            alt='bookends logo image'
+            width='124'
+            height='124'
+            sizes='100%'
+          />
+          <h1 className='ml-3 md:flex text-black text-9xl font-bold font-raleway'>bookends</h1>
         </div>
-        <h1 className='text-black text-9xl font-extrabold flex-grow mb-14'>Bookends</h1>
-        <h1 className='text-5xl font-bold mb-3'>Create. Save. Sustain.</h1>
-        <h1 className='text-5xl font-light flex-grow'>
+
+        <h1 className='font-raleway text-5xl font-bold mb-3'>Create. Save. Sustain.</h1>
+        <h1 className='font-raleway text-5xl font-light flex-grow'>
           Your Second-Hand Creative Marketplace.
         </h1>
 
-        <form className='mb-auto flex-grow mb-4'>
-            <input
-              className='placeholder-black placeholder:font-light placeholder:text-5xl px-4 py-6 rounded-[39px] w-[94%] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-4xl'
-              type='email'
-              placeholder='Secure Early Access: Join the waitlist!'
-            />
+        <p className='font-raleway text-xl font-light w-[65%] mb-3'>
+          Whether you&apos;re lighting up your first YouTube scene or crafting
+          cinema-scale stories, Bookends is your go-to marketplace. Here,
+          creatives of all calibers connect to buy and sell pre-loved gear.
+        </p>
+
+        <form className='flex-grow mb-4'>
+          <input
+            className='placeholder-font-raleway placeholder-black placeholder:font-light placeholder:text-5xl px-4 py-6 rounded-[39px] w-[94%] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-4xl'
+            type='email'
+            placeholder='Secure Early Access: Join the waitlist!'
+          />
         </form>
       </div>
 
