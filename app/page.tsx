@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Subscribe from '../componments/Subscribe';
+import Subscribe from '../components/Subscribe';
 
 export default function Home() {
   return (
@@ -12,8 +12,8 @@ export default function Home() {
             <Image
               src='/images/logo1.png'
               alt='bookends logo image'
-              layout="fill" 
-              objectFit="cover"
+              width={80}
+              height={80}
               className="rounded-sm"   />
             </div>
             <h1 className='ml-3 -mt-7 font-raleway text-black text-[95px] font-black '>
@@ -45,7 +45,7 @@ export default function Home() {
             alt='bookends demo image iphone14'
             width='349'
             height='716'
-            // sizes='100vw'
+            sizes='100vw'
             className='absolute ml-8 bottom-4 drop-shadow-4xl'
           />
           <Image
