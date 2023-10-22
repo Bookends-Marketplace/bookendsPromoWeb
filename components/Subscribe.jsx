@@ -1,5 +1,7 @@
 'use clinet';
 
+import '../app/globals.css'
+
 export default function Subscribe() {
   return (
     <>
