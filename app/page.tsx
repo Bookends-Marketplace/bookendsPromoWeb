@@ -16,7 +16,7 @@ export default function Home() {
               height={80}
               className="rounded-sm"   />
             </div>
-            <h1 className='ml-3 -mt-7 font-raleway text-black text-[95px] font-black '>
+            <h1 className='ml-3 -mt-8 font-raleway text-black text-[98px] font-semibold'>
               bookends
             </h1>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
           Your Second-Hand Creative Marketplace.
         </h1>
 
-        <p className='flex-grow font-raleway text-[24px] font-light w-[75%] mb-3'>
+        <p className='flex-grow font-raleway text-[24px] font-light w-[60%] mb-3'>
           Whether you&apos;re lighting up your first YouTube scene or crafting
           cinema-scale stories, Bookends is your go-to marketplace. Here,
           creatives of all calibers connect to buy and sell pre-loved gear.
@@ -38,25 +38,25 @@ export default function Home() {
           <Subscribe />
       </div>
 
-      <div className='flex-1  no-scrollbar w-4/9'>
-        <div className='flex static'>
+  
+        <div className='flex'>
           <Image
             src='/images/iPhone14.png'
             alt='bookends demo image iphone14'
             width='349'
             height='716'
             sizes='100vw'
-            className='absolute ml-8 bottom-4 drop-shadow-4xl'
+            className='p-1 absolute h-auto max-w-xs drop-shadow-2xl right-[245px] top-[22%]'
           />
           <Image
             src='/images/iPhone13.png'
             alt='bookends demo image iphone13'
             width='349'
             height='716'
-            className='absolute ml-2 -top-[14%] -right-[138px] drop-shadow-4xl'
+            className='p-1 absolute h-auto max-w-xs top-[5%] right-[28px] drop-shadow-2xl -z-10'
           />
         </div>
-      </div>
+ 
     </main>
   );
 }
