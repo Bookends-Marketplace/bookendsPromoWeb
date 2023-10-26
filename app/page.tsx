@@ -9,12 +9,13 @@ export default function Home() {
         <div className='mt-8 flex-grow'>
           <div className='flex mt-[2vw]'>
             <div className='h-[6vw] w-[6vw] relative'>
-            <Image
-              src='/images/logo1.png'
-              alt='bookends logo image'
-              width={80}
-              height={80}
-              className="rounded-sm"   />
+              <Image
+                src='/images/logo1.png'
+                alt='bookends logo image'
+                width={180}
+                height={180}
+                className='rounded-sm'
+              />
             </div>
             <h1 className='ml-[.2vw] -mt-[1.6vw] font-raleway text-black text-[6vw] font-semibold'>
               bookends
@@ -35,28 +36,30 @@ export default function Home() {
           creatives of all calibers connect to buy and sell pre-loved gear.
         </p>
 
-          <Subscribe />
+        <Subscribe />
       </div>
 
-  
-        <div className='flex'>
+      <div className='flex'>
+        <div className='w-[17vw] h-[auto]'>
           <Image
             src='/images/iPhone14.png'
             alt='bookends demo image iphone14'
             width='349'
             height='716'
-            sizes='100vw'
-            className='p-1 absolute h-auto max-w-xs drop-shadow-2xl right-[12vw] top-[20%]'
+            // sizes='100vw'
+            className='relative drop-shadow-2xl right-[-4vw] top-[20%]'
           />
+        </div>
+        <div className='w-[17vw] h-[auto]'>
           <Image
             src='/images/iPhone13.png'
             alt='bookends demo image iphone13'
             width='349'
             height='716'
-            className='p-1 absolute h-auto max-w-xs top-[6%] right-[1.5vw] drop-shadow-2xl -z-10'
+            className='relative top-[6%] right-[1.5vw] drop-shadow-2xl -z-10'
           />
         </div>
- 
+      </div>
     </main>
   );
 }
