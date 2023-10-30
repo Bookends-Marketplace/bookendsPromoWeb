@@ -5,7 +5,6 @@ import '../app/globals.css';
 export default function Subscribe() {
   return (
     <>
-
         <div id='mc_embed_shell' className='flex-grow mb-4'>
           <div id='mc_embed_signup' >
             <form
@@ -17,14 +16,14 @@ export default function Subscribe() {
               target='_self'
               noValidate=''
             >
-              <div id='mc_embed_signup_scroll'>
+              <div id='mc_embed_signup_scroll' className='flex'>
                   <input
                     type='email'
                     name='EMAIL'
-                    className='placeholder-font-raleway placeholder:font-light placeholder:text-[3vw] px-[1.5vw] py-[1vw] rounded-[29px] w-[47vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-4xl required email'
+                    className='placeholder-font-raleway placeholder:font-light placeholder:text-[2.5vw] px-[1.4vw] py-[1vw] rounded-full w-[27vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-4xl required email'
                     id='mce-EMAIL'
                     required=''
-                    placeholder='Unlock your early access'
+                    placeholder='Unlock Early Access'
                   />
                 <div id='mce-responses'
                  className='clear foot'
@@ -56,8 +55,8 @@ export default function Subscribe() {
                       type='submit'
                       name='subscribe'
                       id='mc-embedded-subscribe'
-                      className='button'
-                      value='Subscribe'
+                      className='bg-red-500 hover:bg-red-700 text-white text-[2vw] rounded-full py-[1vw] px-[2.5vw] ml-[1vw]'
+                      value='Sign Up'
                     />
                     <p >
                       <a

@@ -30,7 +30,7 @@ export default function Home() {
           Your Second-Hand Creative Marketplace.
         </h1>
 
-        <p className='flex-grow font-raleway text-[1.3vw] font-light w-[60%] mb-3'>
+        <p className='flex-grow font-raleway text-[1.3vw] font-light w-[95%] mb-3'>
           Whether you&apos;re lighting up your first YouTube scene or crafting
           cinema-scale stories, Bookends is your go-to marketplace. Here,
           creatives of all calibers connect to buy and sell pre-loved gear.
