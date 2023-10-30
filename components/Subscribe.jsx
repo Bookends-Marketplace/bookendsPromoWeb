@@ -20,7 +20,7 @@ export default function Subscribe() {
                   <input
                     type='email'
                     name='EMAIL'
-                    className='placeholder-font-raleway placeholder:font-light placeholder:text-[2.5vw] px-[1.4vw] py-[1vw] rounded-full w-[27vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-4xl required email'
+                    className='placeholder-font-raleway placeholder:font-light placeholder:text-[2.4vw] px-[2.1vw] py-[.7vw] rounded-full w-[27vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[2.5vw] required email'
                     id='mce-EMAIL'
                     required=''
                     placeholder='Unlock Early Access'
