@@ -21,7 +21,7 @@ const config: Config = {
         ]
       },
       fontFamily: {
-        raleway: ["Raleway", "sans-serif"],
+        raleway: ['var(--font-Raleway)'],
       },
     },
   },
