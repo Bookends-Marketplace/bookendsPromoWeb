@@ -18,7 +18,7 @@ export default function Home() {
           <div className='flex mt-[2vw]'>
             <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
               <Image
-                src='/images/logo1.png'
+                src='/images/BookendsLogo.svg'
                 alt='bookends logo image'
                 width={180}
                 height={180}
@@ -26,7 +26,7 @@ export default function Home() {
               />
             </div>
             <h1
-              className={`ml-[2vw] text-[16vw] -mt-[5vw] ${raleway.variable} font-raleway text-black sm:ml-[.2vw] sm:-mt-[1.6vw]  sm:text-[6vw] sm:font-semibold`}
+              className={`ml-[2vw]  text-[16vw] -mt-[5vw] ${raleway.variable} font-raleway sm:-mt-[1.6vw]  sm:text-[6vw] sm:font-semibold`}
             >
               bookends
             </h1>
@@ -34,30 +34,30 @@ export default function Home() {
         </div>
 
         <h2
-          className={`${raleway.variable} font-raleway text-[7.7vw] font-bold mb-3 sm:text-[5vw] font-bold mb-3`}
+          className={`${raleway.variable} font-raleway text-[7.7vw] font-bold mb-0.5 sm:mb-1 sm:text-[5vw] font-bold mb-3`}
         >
           Create. Save. Sustain.
         </h2>
         <h2
-          className={`${raleway.variable} font-raleway font-light text-[4.2vw] mb-3 sm:text-[3.1vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow`}
+          className={`${raleway.variable} font-raleway font-light text-[4.2vw] mb-8 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow`}
         >
           Your Second-Hand Creative Marketplace.
         </h2>
         <div className='visible sm:hidden'>
-          <div className='ml-auto mr-auto mb-7 w-[55vw] h-[auto]'>
+          <div className='ml-auto mr-auto mb-8 w-[55vw] h-[auto]'>
             <Image
               src='/images/iPhone14.png'
               alt='bookends demo image iphone14'
               width='183'
               height='389'
               // sizes='100vw'
-              className='relative drop-shadow-2xl'
+              className='ml-auto mr-auto drop-shadow-2xl'
             />
           </div>
         </div>
 
         <p
-          className={`flex-grow ${raleway.variable} sm:grow-[.1] font-raleway font-light sm:text-[2.4vw] md:text-[2.6vw] lg:text-[2vw] sm:w-[95%] sm:mb-3`}
+          className={`flex-grow ${raleway.variable} p-7 sm:p-0 sm:grow-[.05] md:grow-[.2] lg:grow font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[1.4vw] sm:w-[95%] sm:mb-3`}
         >
           Whether you&apos;re lighting up your first YouTube scene or crafting
           cinema-scale stories, Bookends is your go-to marketplace. Here,
@@ -67,7 +67,7 @@ export default function Home() {
         <Subscribe />
       </div>
 
-      <div className='hidden sm:visible sm:flex md:visible lg:visible xl:visisble'>
+      <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
         <div className='w-[17vw] h-[auto]'>
           <Image
             src='/images/iPhone14.png'
@@ -75,7 +75,7 @@ export default function Home() {
             width='349'
             height='716'
             // sizes='100vw'
-            className='relative drop-shadow-2xl right-[-4vw] top-[20%]'
+            className='relative drop-shadow-2xl right-[-5vw] top-[10.5%] md:right-[-5vw] md:top-[11.5%] lg:right-[-4vw] lg:top-[19%]'
           />
         </div>
         <div className='w-[17vw] h-[auto]'>
@@ -84,7 +84,7 @@ export default function Home() {
             alt='bookends demo image iphone13'
             width='349'
             height='716'
-            className='relative top-[6%] right-[1.5vw] drop-shadow-2xl -z-10'
+            className='relative top-[6%] right-[1.5vw] md:top-[6%] md:right-[1.5vw] lg:top-[8%] lg:right-[1.5vw] drop-shadow-2xl -z-10'
           />
         </div>
       </div>
