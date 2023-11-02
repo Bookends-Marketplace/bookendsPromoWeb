@@ -14,7 +14,7 @@ export default function Home() {
     <main className='flex'>
       <div className='w-[2vw] sm:w-[9vw]'></div>
       <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
-        <div className='mt-2 sm:mt-8 sm:flex-grow'>
+        <div className='mt-2 sm:mt-8 md:grow-[.25] lg:flex-grow'>
           <div className='flex mt-[2vw]'>
             <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
               <Image
@@ -39,7 +39,7 @@ export default function Home() {
           Create. Save. Sustain.
         </h2>
         <h2
-          className={`${raleway.variable} font-raleway font-light text-[4.2vw] mb-3 sm:text-[3.1vw] sm:flex-grow`}
+          className={`${raleway.variable} font-raleway font-light text-[4.2vw] mb-3 sm:text-[3.1vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow`}
         >
           Your Second-Hand Creative Marketplace.
         </h2>
@@ -57,7 +57,7 @@ export default function Home() {
         </div>
 
         <p
-          className={`flex-grow ${raleway.variable} font-raleway font-light sm:text-[1.3vw] sm:w-[95%] sm:mb-3`}
+          className={`flex-grow ${raleway.variable} sm:grow-[.1] font-raleway font-light sm:text-[2.4vw] md:text-[2.6vw] lg:text-[2vw] sm:w-[95%] sm:mb-3`}
         >
           Whether you&apos;re lighting up your first YouTube scene or crafting
           cinema-scale stories, Bookends is your go-to marketplace. Here,
