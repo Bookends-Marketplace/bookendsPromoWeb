@@ -30,7 +30,7 @@ export default function Subscribe() {
                 name='EMAIL'
                 className={`placeholder-${raleway.variable} placeholder-font-raleway placeholder:font-light sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:w-[27vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email`}
                 id='mce-EMAIL'
-                required=''
+                required
                 placeholder='Unlock Early Access'
               />
               <div id='mce-responses' className='clear foot'>
