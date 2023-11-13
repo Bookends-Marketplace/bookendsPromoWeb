@@ -14,7 +14,7 @@ export default function Home() {
     <main className='flex'>
       <div className='w-[2vw] sm:w-[9vw]'></div>
       <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
-        <div className='mt-2 sm:mt-8 md:grow-[.25] lg:flex-grow'>
+        <div className='mt-8 sm:mt-8 md:grow-[.25] lg:flex-grow'>
           <div className='flex mt-[2vw]'>
             <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
               <Image
@@ -44,7 +44,7 @@ export default function Home() {
           Your Second-Hand Creative Marketplace.
         </h2>
         <div className='visible sm:hidden'>
-          <div className='ml-auto mr-auto mb-8 w-[55vw] h-[auto]'>
+          <div className='ml-auto mr-auto flex-grow w-[55vw] h-[auto]'>
             <Image
               src='/images/iPhone14.png'
               alt='bookends demo image iphone14'
