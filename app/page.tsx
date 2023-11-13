@@ -44,7 +44,7 @@ export default function Home() {
           Your Second-Hand Creative Marketplace.
         </h2>
         <div className='visible sm:hidden'>
-          <div className='ml-auto mr-auto flex-grow w-[55vw] h-[auto]'>
+          <div className='ml-auto mr-auto flex-grow w-[40vw] h-[auto]'>
             <Image
               src='/images/iPhone14.png'
               alt='bookends demo image iphone14'
