@@ -57,7 +57,7 @@ export default function Home() {
         </div>
 
         <p
-          className={`flex-grow ${raleway.variable} p-7 sm:p-0 sm:grow-[.05] md:grow-[.2] lg:grow font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[1.4vw] sm:w-[95%] sm:mb-3`}
+          className={`flex-grow ${raleway.variable} mt-4 pr-2 sm:p-0 sm:grow-[.05] md:grow-[.2] lg:grow font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[1.4vw] sm:w-[95%] sm:mb-3`}
         >
           Whether you&apos;re lighting up your first YouTube scene or crafting
           cinema-scale stories, Bookends is your go-to marketplace. Here,
