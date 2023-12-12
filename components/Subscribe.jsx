@@ -26,12 +26,12 @@ export default function Subscribe() {
           >
             <div
               id='mc_embed_signup_scroll'
-              className='flex flex-col mt-5 sm:flex-row ml-auto mr-auto sm:ml-0'
+              className='flex flex-col mt-5 justify-center items-center sm:flex-row ml-auto mr-auto sm:ml-0'
             >
               <input
                 type='text'
                 name='FNAME'
-                className={`placeholder-${raleway.variable} mb-4 mr-4 placeholder-font-raleway placeholder:font-light sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:w-[20vw] sm:w-[17vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email text`}
+                className={`placeholder-${raleway.variable} mb-4 placeholder-font-raleway placeholder:font-light sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:mr-4  sm:w-[20vw] sm:w-[17vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email text`}
                 id='mce-FNAME'
                 placeholder='First Name'
               />
