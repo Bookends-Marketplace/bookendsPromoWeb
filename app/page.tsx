@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Subscribe from '../components/Subscribe';
 import { Raleway } from 'next/font/google';
+import Link from 'next/link';
 
 const raleway = Raleway({
   display: 'swap',
@@ -14,6 +15,13 @@ export default function Home() {
     <main className='flex'>
       <div className='w-[2vw] sm:w-[9vw]'></div>
       <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
+        <nav>
+          <Link href="/faqs" passHref>
+            <h1 className='text-[1.6vw] sm:text-[1.1vw] md:text-[1.1vw] lg:text-[.8vw] font-raleway font-light hover:underline'>
+              FAQs
+            </h1>
+          </Link>
+        </nav>
         <div className='mt-4 sm:mt-8 md:grow-[.25] lg:flex-grow'>
           <div className='flex'>
             <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>

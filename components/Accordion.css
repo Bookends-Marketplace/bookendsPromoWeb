@@ -1,0 +1,36 @@
+.accordion-item {
+    border-bottom: 1px solid #060606;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .accordion-item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f67570;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .accordion-item button .text-lg {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+
+  }
+  
+  .accordion-item .hidden {
+    display: none;
+  }
+  
+  .accordion-item .block {
+    display: block;
+    padding: 10px;
+  }
+  
