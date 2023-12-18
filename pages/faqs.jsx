@@ -1,22 +1,40 @@
 import Accordion from "../components/Accordion";
-import faqs from "../data/faqs.json";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FAQSPage = () => {
     return (
-        <div style={{ display: 'flex', minHeight: '100vh',backgroundColor: '#f67570', alignItems: 'center' }}>
-            <div style={{ flex: 1, padding: '168px', maxWidth: '300px' }}>
-                <Image 
-                    src="/images/SignUpPage.png" 
-                    alt="iPhone Prototype" 
-                    layout="responsive"
-                    width={162} 
-                    height={330} 
-                />
+        <div className="flex flex-col min-h-screen bg-[#f67570]">
+         <div className='flex mt-4 sm:mt-8 pl-[2vw] sm:pl-[9vw] items-center'>
+                <Link href="/" passHref>
+                        <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
+                            <Image
+                                src='/images/BookendsLogo.svg'
+                                alt='bookends logo image'
+                                width={180}
+                                height={180}
+                                layout="intrinsic"
+                            /><h1 className='text-[16vw] sm:text-[6vw] font-semibold ml-[2vw]'>
+                            bookends
+                        </h1>
+                        </div>
+                        
+                </Link>
             </div>
-            <div style={{ flex: 2, backgroundColor: '#f67570', padding: '20px', color: 'aliceblue', fontFamily: 'Raleway, sans-serif' }}>
-                <h1 style={{ textAlign: 'left', marginBottom: '20px' }}>Frequently Asked Questions</h1>
-                <Accordion />
+            <div className="flex-grow flex items-center justify-center p-4">
+                <div className="flex-1 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+                    <Image 
+                        src="/images/SignUpPage.png" 
+                        alt="iPhone Prototype" 
+                        layout="responsive"
+                        width={500} 
+                        height={1000}
+                    />
+                </div>
+                <div className="flex-1 max-w-xl p-5 text-aliceblue">
+                    <h1 className="text-3xl mb-5">Frequently Asked Questions</h1>
+                    <Accordion />
+                </div>
             </div>
         </div>
     );

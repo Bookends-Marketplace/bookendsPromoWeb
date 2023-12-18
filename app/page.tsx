@@ -15,13 +15,11 @@ export default function Home() {
     <main className='flex'>
       <div className='w-[2vw] sm:w-[9vw]'></div>
       <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
-        <nav>
           <Link href="/faqs" passHref>
             <h1 className='text-[1.6vw] sm:text-[1.1vw] md:text-[1.1vw] lg:text-[.8vw] font-raleway font-light hover:underline'>
               FAQs
             </h1>
           </Link>
-        </nav>
         <div className='mt-4 sm:mt-8 md:grow-[.25] lg:flex-grow'>
           <div className='flex'>
             <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
@@ -49,7 +47,7 @@ export default function Home() {
         <h2
           className={`${raleway.variable} font-raleway font-light text-[4.2vw] -mt-1 mb-4 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow`}
         >
-          Your Second-Hand Creative Marketplace.
+          Your Creative Marketplace.
         </h2>
         <div className='visible sm:hidden'>
           <div className='ml-auto mr-auto flex-grow w-[40vw] h-[auto]'>

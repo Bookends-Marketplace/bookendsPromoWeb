@@ -1,16 +1,13 @@
 import { useState } from 'react';
 import faqs from '../data/faqs.json';
-import './Accordion.css';
+import '../app/globals.css';
 
-const AccordionItem = ({ question, answer }) => { 
-    const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => setIsOpen(!isOpen); 
-
+const AccordionItem = ({ question, answer, isOpen, toggle }) => {
     return (
-        <div className="accordion-item">  
+        <div className="accordion-item">
             <button
-                className='flex justify-between items-center w full p-4 text-left'
+                className='flex justify-between items-center w-full p-4 text-left'
                 onClick={toggle}
             >
                 <span className='text-lg font-medium'>{question}</span>
@@ -24,13 +21,27 @@ const AccordionItem = ({ question, answer }) => {
 }
 
 const Accordion = () => {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggle = index => {
+        if (openIndex === index) {
+            // If the same index is clicked again, close it
+            setOpenIndex(null);
+        } else {
+            // Open the clicked item
+            setOpenIndex(index);
+        }
+    };
+
     return (
         <div>
-            {faqs.map((faq) => (
+            {faqs.map((faq, index) => (
                 <AccordionItem
-                    key={faq.question}
+                    key={index}
                     question={faq.question}
                     answer={faq.answer}
+                    isOpen={openIndex === index}
+                    toggle={() => toggle(index)}
                 />
             ))}
         </div>
