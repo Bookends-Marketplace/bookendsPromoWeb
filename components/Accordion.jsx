@@ -4,7 +4,6 @@ import '../app/globals.css';
 
 
 const AccordionItem = ({ question, answer, isOpen, toggle }) => {
-    console.log(isOpen);
     return (
         <div className="accordion-item">
             <button
