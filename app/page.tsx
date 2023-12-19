@@ -13,14 +13,7 @@ const raleway = Raleway({
 export default function Home() {
   return (
     <main className='flex'>
-    {/* //   <div className='w-[2vw] sm:w-[9vw]'></div>
-    //   <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
-    //       <Link href="/faqs" passHref>
-    //         <h2 className='ml-4 font-raleway text-[7.7vw] font-bold sm:mb-1 sm:text-[5vw] font-bold mb-3 hover:underline cursor-pointer'>
-    //           FAQs
-    //         </h2>
-    //       </Link> */}
-    <div className='w-[2vw] sm:w-[9vw]'></div>
+
     <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
       <div className='flex mt-4 sm:mt-8 md:grow-[.25] lg:flex-grow items-center'>
         <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
