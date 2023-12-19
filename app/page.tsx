@@ -17,13 +17,13 @@ export default function Home() {
     <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
       <div className='flex mt-4 sm:mt-8 md:grow-[.25] lg:flex-grow items-center'>
         <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
-          <Image
+          {/* <Image
             src='/images/BookendsLogo.svg'
             alt='bookends logo image'
             width={180}
             height={180}
             className='rounded-sm'
-          />
+          /> */}
         </div>
         <h1
           className={`ml-[2vw]  text-[16vw] -mt-[5vw] font-raleway sm:-mt-[1.6vw]  sm:text-[6vw] sm:font-semibold`}
