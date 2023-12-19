@@ -4,6 +4,7 @@ import '../app/globals.css';
 
 
 const AccordionItem = ({ question, answer, isOpen, toggle }) => {
+    console.log(isOpen);
     return (
         <div className="accordion-item">
             <button
@@ -14,7 +15,7 @@ const AccordionItem = ({ question, answer, isOpen, toggle }) => {
                 <span>{isOpen ? '-' : '+'}</span>
             </button>
             <div className={`${isOpen ? 'block' : 'hidden'} p-4`}>
-                {answer}
+                {answer} 
             </div>
         </div>
     );
