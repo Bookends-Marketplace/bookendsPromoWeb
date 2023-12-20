@@ -10,8 +10,6 @@ const FAQSPage = () => {
     return (
         <div className="flex flex-col min-h-screen bg-[#f67570]">
             <Nav />
-         <div className='flex mt-4 sm:mt-8 pl-[2vw]'>
-            </div>
                 <div className="flex items-center p-4">
                     <div className="w-full p-5 text-aliceblue">
                         <h1 className="text-4xl mb-8 font-bold font-raleway text-center">
