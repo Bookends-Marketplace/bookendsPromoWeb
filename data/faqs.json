@@ -4,29 +4,34 @@
       "answer": "Bookends is a mobile platform designed for creatives and industry professionals to buy, sell, and exchange production-related goods. From camera equipment to props, our marketplace caters to a wide range of creative needs, making transactions smooth, sustainable, and efficient."
     },
     {
-      "question": "How Does Bookends ensure the quality of listed items?",
-      "answer": "We encourage our users to provide detailed descriptions and clear images for all listed items. While Bookends facilitates transactions, the responsibility for item quality rests with sellers. We also have a feedback system to help buyers make informed decisions based on past user experiences. "
+      "question": "Can I use Bookends if I'm not a professional in the industry?",
+      "answer": "Certainly! Bookends is for everyone from professional filmmakers to hobbyists. Whether you're outfitting a large-scale production or just starting in photography, you'll find Bookends an invaluable resource. Are there any fees associated with using Bookends?  Listing items on Bookends is free. We charge a modest 10% transaction fee when an item is sold, which helps us maintain and improve our platform's services."
     },
     {
       "question": "Is my personal and payment information secure on Bookends?",
       "answer": "Absolutely. User security is paramount. We use Stripe for payment processing, known for its robust security measures. Additionally, Google OAuth is implemented for secure logins, and we adhere to stringent data privacy laws to protect your personal information."
     },
     {
-      "question": "Can I use Bookends if I'm not a professional in the industry?",
-      "answer": "Certainly! Bookends is for everyone from professional filmmakers to hobbyists. Whether you're outfitting a large-scale production or just starting in photography, you'll find Bookends an invaluable resource. Are there any fees associated with using Bookends?  Listing items on Bookends is free. We charge a modest 10% transaction fee when an item is sold, which helps us maintain and improve our platform's services."
+      "question": "How does Bookends ensure the quality of listed items?",
+      "answer": "We encourage our users to provide detailed descriptions and clear images for all listed items. While Bookends facilitates transactions, the responsibility for item quality rests with sellers. We also have a feedback system to help buyers make informed decisions based on past user experiences. "
+    },
+    {
+      "question": "Are there any fees associated with using Bookends?",
+      "answer": "Listing items on Bookends is free. We charge a modest 10% transaction fee when an item is sold, which helps us maintain and improve our platform's services."
     },
     {
       "question": "What kind of events does Bookends plan to host?",
       "answer": "We’re planning a variety of events, starting with our first creative marketplace event in spring 2024. These will be vibrant mixtures of marketplaces and showcases, offering opportunities for buying, selling, networking, and content screening."
     },
     {
-      "question": "How can I provide feedback on the platform?",
-      "answer": "We value your input immensely. You can provide feedback directly through the app or by contacting our support team. As early adopters, your insights are crucial in shaping Bookends to better serve our community."
-    },
-    {
       "question": "When is the full launch of Bookends scheduled?",
       "answer": "We're planning for a full-scale launch following our initial soft-launch phase, where we gather feedback and fine-tune the platform. Stay tuned for an official announcement with the exact date!"
     },
+    {
+      "question": "How can I provide feedback on the platform?",
+      "answer": "We value your input immensely. You can provide feedback directly through the app or by contacting our support team. As early adopters, your insights are crucial in shaping Bookends to better serve our community."
+    },
+    
     {
       "question": "Will there be updates or new features added post-launch?",
       "answer": "Absolutely. Bookends is committed to evolving and improving. We plan to roll out new features and updates regularly, based on user feedback and emerging market needs. How can I stay updated on Bookends' news and events?  The best way to stay in the loop is by signing up for our newsletter, following us on social media, and keeping the app updated for the latest news and features."

@@ -1,7 +1,8 @@
+import Nav from '../components/Nav';
 import Image from 'next/image';
 import Subscribe from '../components/Subscribe';
 import { Raleway } from 'next/font/google';
-import Link from 'next/link';
+import '../app/globals.css';
 
 const raleway = Raleway({
   display: 'swap',
@@ -12,31 +13,13 @@ const raleway = Raleway({
 
 export default function Home() {
   return (
-    <main className='flex'>
-
-    <div className='flex flex-col h-screen justify-around w-full sm:w-4/9'>
-      <div className='flex mt-4 sm:mt-8 md:grow-[.25] lg:flex-grow items-center'>
-        <div className='h-[15vw] w-[15vw] sm:h-[6vw] sm:w-[6vw] relative'>
-          {/* <Image
-            src='/images/BookendsLogo.svg'
-            alt='bookends logo image'
-            width={180}
-            height={180}
-            className='rounded-sm'
-          /> */}
-        </div>
-        <h1
-          className={`ml-[2vw]  text-[16vw] -mt-[5vw] font-raleway sm:-mt-[1.6vw]  sm:text-[6vw] sm:font-semibold`}
-        >
-          bookends
-        </h1>
-        <Link href="/faqs" passHref>
-          <h2 className='ml-4 font-raleway text-[7.7vw] font-bold sm:mb-1 sm:text-[5vw] font-bold mb-3 hover:underline cursor-pointer'>
-            FAQs
-          </h2>
-        </Link>
-      </div>
-
+    <>
+      {/* Navigation Bar */}
+      <Nav />
+    <main className='flex' >
+      {/* <Nav /> */}
+      <div className='w-[2vw] sm:w-[9vw]'></div>
+      <div className='flex flex-col h-screen justify-around w-full md:w-4/9'>
         <h2
           className={`${raleway.variable} font-raleway -mt-2 text-[7.7vw] font-bold  sm:mb-1 sm:text-[5vw] font-bold mb-3`}
         >
@@ -93,5 +76,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </>
   );
 }
