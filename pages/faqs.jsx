@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
+
 import Card from "../components/Card";
 import Nav from '../components/Nav';
 import faqs from '../data/faqs.json';
@@ -12,7 +11,7 @@ const FAQSPage = () => {
             <Nav />
                 <div className="flex items-center p-4">
                     <div className="w-full p-5 text-aliceblue">
-                        <h1 className="text-4xl mb-8 font-bold font-raleway text-center">
+                        <h1 className="text-4xl mb-8 font-bold font-raleway text-center hidden md:block">
                             Frequently Asked Questions
                         </h1>
                     <div className="flex justify-center">
