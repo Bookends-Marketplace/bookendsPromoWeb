@@ -15,14 +15,24 @@ const Nav = () => {
                         </h1>
                     </div>
                 </Link>
-                <Link href="/faqs" passHref>
-                <div 
-                    className='text-aliceblue font-semibold text-xl font-raleway'
-                    style={{ fontFamily: 'Raleway, sans-serif' }}
-                >
-                    FAQs
+                <div className='flex space-x-6'>
+                    <Link href="/faqs" passHref>
+                        <div 
+                            className='text-aliceblue font-semibold text-xl font-raleway'
+                            style={{ fontFamily: 'Raleway, sans-serif' }}
+                        >
+                            FAQs
+                        </div>
+                    </Link>
+                    <Link href="/contact" passHref>
+                        <div 
+                            className='text-aliceblue font-semibold text-xl font-raleway'
+                            style={{ fontFamily: 'Raleway, sans-serif' }}
+                        >
+                            Contact 
+                        </div>
+                    </Link> 
                 </div>
-            </Link>
             </div>
     );
 }
