@@ -49,3 +49,11 @@ input:focus, textarea:focus {
 button:hover {
   background-color: #f55350;
 }
+
+.section-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* To stack children vertically */
+}
