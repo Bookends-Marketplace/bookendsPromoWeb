@@ -40,7 +40,7 @@ const NewHome = () => {
                   className={`mb-4  mt-4 pr-2 sm:p-0 sm:grow-[.05] md:grow-[.2] lg:grow font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[1.4vw] sm:w-[95%] sm:mb-3`}
                 >
                   Whether you&apos;re lighting up your first YouTube scene or crafting
-                  cinema-scale stories, Bookends is your go-to marketplace. Here,
+                  cinema-scale stories, <span className="font-bold">bookends</span> is your go-to marketplace. Here,
                   creatives of all calibers connect to buy and sell pre-loved gear.
                 </p>
     
@@ -71,8 +71,55 @@ const NewHome = () => {
           
             </main>
           </AnimatedSection>        
-        </>
+         </>
       );
 };
 
 export default NewHome;
+
+
+// import Nav from '../components/Nav';
+// import AnimatedSection from '../components/AnimatedSection';
+// import '../app/globals.css';
+
+// import Image from 'next/image';
+// import Subscribe from '../components/Subscribe';
+// import { motion } from 'framer-motion';
+
+// const NewHome = () => {
+//     return (
+//         <>
+//             <Nav />
+//             <AnimatedSection>
+//                 <main className='min-h-screen flex flex-col justify-center items-center text-center mt-12 bg-cover bg-center'>
+//                     <div className="section-container"  style={{ minHeight: '40vh' }}>
+
+//                     <motion.h1 
+//                         initial={{ scale: 0.9, opacity: 0 }}
+//                         animate={{ scale: 1, opacity: 1 }}
+//                         transition={{ duration: 1 }}
+//                         className='text-6xl font-bold text-aliceblue mb-4'>
+//                         Empowering Creativity, Sustainably
+//                     </motion.h1>
+//                     <motion.p
+//                         initial={{ opacity: 0 }}
+//                         animate={{ opacity: 1 }}
+//                         transition={{ duration: 1.5 }}
+//                         className='text-xl text-aliceblue mb-6'>
+//                         Join the creative marketplace where professionals and beginners alike find, sell, and share quality gear.
+//                     </motion.p>
+//                     {/* <AnimatedSection> */}
+//                         <Subscribe />
+//                     {/* </AnimatedSection> */}
+//                     </div>
+//                     <AnimatedSection>
+//                         <h2 className='text-aliceblue text-6xl font-bold mb-4'>Our Mission</h2>
+//                         <p className='text-aliceblue text-3xl'>At Bookends, we connect productions and creatives...</p>
+//                     </AnimatedSection>
+//                 </main>
+//             </AnimatedSection>
+//         </>
+//     );
+// };
+
+// export default NewHome;

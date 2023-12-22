@@ -20,7 +20,8 @@
 }
 
 body {
-  background-color: rgb(246,117,112);
+  /* background-color: rgb(246,117,112); */
+  background: linear-gradient(135deg, rgb(246, 117, 112) 0%, rgb(245, 83, 80) 100%);
   color: aliceblue; 
   font-family: 'Raleway', sans-serif;
 }
@@ -51,7 +52,6 @@ button:hover {
 }
 
 .section-container {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

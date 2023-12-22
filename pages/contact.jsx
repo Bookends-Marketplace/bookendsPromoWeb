@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import '../app/globals.css';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -7,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <Nav />
-            <div className='bg-[#f67570] flex flex-col items-center justify-center p-4'>
+            <div className='flex flex-col items-center justify-center p-4'>
                 <AnimatedSection>
                     <h1 className='text-aliceblue text-6xl font-bold mb-4'>Reach Out!</h1>
                     <p className='text-aliceblue text-5xl mb-8'>We're reimagining the way creative gear is shared and sustained.</p>

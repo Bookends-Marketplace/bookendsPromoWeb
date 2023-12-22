@@ -3,7 +3,7 @@ import '../app/globals.css';
 
 const Nav = () => {
     return (
-        <div className='bg-[#f67570] p-4 flex justify-between items-center'>
+        <div className='p-4 flex justify-between items-center'>
                 <Link href="/home" passHref>
                     <div className='flex items-center'>
                         <h1 

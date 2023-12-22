@@ -1,4 +1,3 @@
-
 import Card from "../components/Card";
 import Nav from '../components/Nav';
 import faqs from '../data/faqs.json';
@@ -8,7 +7,7 @@ import '../app/globals.css';
 
 const FAQSPage = () => {
     return (
-        <div className="flex flex-col min-h-screen bg-[#f67570]">
+        <div className="flex flex-col min-h-screen">
             <Nav />
             {/* <AnimatedSection> */}
                 <div className="flex items-center p-4">
