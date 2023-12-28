@@ -15,15 +15,15 @@ const FAQSPage = () => {
                         <h1 className="text-4xl mb-8 font-bold font-raleway text-center hidden md:block">
                             Frequently Asked Questions
                         </h1>
-                    <div className="flex justify-center">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-6xl">
-                                {faqs.map((faq, index) => (
-                                    <Card key={index} question={faq.question} answer={faq.answer} />
+                        <div className="flex justify-center">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-6xl">
+                                {faqs.map((faq) => (
+                                    <Card key={faq.id} question={faq.question} answer={faq.answer} />
                                 ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
             {/* </AnimatedSection> */}
         </div>
