@@ -1,7 +1,7 @@
 [
     {
       "question": "What exactly is Bookends?",
-      "answer": "Bookends is a mobile platform designed for creatives and industry professionals to buy, sell, and exchange production-related goods. From camera equipment to props, our marketplace caters to a wide range of creative needs, making transactions smooth, sustainable, and efficient."
+      "answer": "Bookends is a mobile platform designed by and for creatives and industry professionals to buy, sell, and exchange production-related goods. From camera equipment to props, our marketplace caters to a wide range of creative needs, making transactions smooth, sustainable, and efficient."
     },
     {
       "question": "Can I use Bookends if I'm not a professional in the industry?",
@@ -34,6 +34,11 @@
     
     {
       "question": "Will there be updates or new features added post-launch?",
-      "answer": "Absolutely. Bookends is committed to evolving and improving. We plan to roll out new features and updates regularly, based on user feedback and emerging market needs. How can I stay updated on Bookends' news and events?  The best way to stay in the loop is by signing up for our newsletter, following us on social media, and keeping the app updated for the latest news and features."
+      "answer": "Absolutely. Bookends is committed to evolving and improving. We plan to roll out new features and updates regularly, based on user feedback and emerging market needs. ."
+    },
+    {
+      "question": "How can I stay updated on Bookends' news and events?",
+      "answer": "The best way to stay in the loop is by signing up for our newsletter, following us on social media, and keeping the app updated for the latest news and features."
     }
+     
   ]

@@ -1,41 +1,67 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+/* Importing Raleway font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Tailwind CSS Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Root CSS Variables */
 :root {
-  /* --foreground-rgb: 0, 0, 0; */
   --background-start-rgb: #f67570;
   --background-end-rgb: rgb(246, 117, 112);
-   /* New dark mode colors */
-   --background-dark-start: #2D2D2D;
-   --background-dark-end: #1A1A1A;
+
+  /* New dark mode colors */
+  --background-dark-start: #2D2D2D;
+  --background-dark-end: #1A1A1A;
 }
 
+/* Dark Mode Specific Styles */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --foreground-rgb: 255, 255, 255; */
     --background-start-rgb: rgb(246, 117, 112);
     --background-end-rgb: rgb(246, 117, 112);
   }
 }
 
+/* Body Styles */
 body {
-  /* background-color: rgb(246,117,112); */
   background: linear-gradient(135deg, rgb(246, 117, 112) 0%, rgb(245, 83, 80) 100%);
   color: aliceblue; 
   font-family: 'Raleway', sans-serif;
 }
 
-/* globals.css */
+/* Dark Mode Body Styles */
 body.dark-mode {
   background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
   color: #E0E0E0;
+  --button-bg: #525252; /* Dark mode button background */
+  --button-text: #E0E0E0; /* Dark mode button text */
+  --button-hover-bg: #676767; /* Dark mode button hover background */
 }
 
+/* Dark Mode Button Styles */
+body.dark-mode button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
 
+/* Dark Mode Button Hover Styles */
+body.dark-mode button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Dark Mode Link Styles */
+body.dark-mode a {
+  color: #9DBFFF; /* Light blue link color for dark mode */
+}
+
+/* Dark Mode Scrollbar Thumb Styles */
+body.dark-mode .scrollbar-thumb {
+  background-color: #4E4E4E; /* Darker scrollbar color */
+}
+
+/* Utilities for Responsive Design and Scrollbar Hiding */
 @layer utilities {
   @layers responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -51,16 +77,19 @@ body.dark-mode {
   }
 }
 
+/* Focus Styles for Inputs and Textareas */
 input:focus, textarea:focus {
   outline: none;
   border-color: #f55350;
   box-shadow: 0 0 0 2px rgba(245, 83, 80, 0.4);
 }
 
+/* Button Hover Effect */
 button:hover {
   background-color: #f55350;
 }
 
+/* Section Container Styles */
 .section-container {
     display: flex;
     align-items: center;
@@ -68,12 +97,14 @@ button:hover {
     flex-direction: column; /* To stack children vertically */
 }
 
+/* Snap Container for Scroll Snapping */
 .snap-container {
   overflow-y: scroll;
   height: 100vh;
   scroll-snap-type: y mandatory;
 }
 
+/* Snap Section for Individual Sections */
 .snap-section {
   scroll-snap-align: center;
 }
