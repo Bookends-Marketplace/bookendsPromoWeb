@@ -64,7 +64,7 @@ const NewHome = () => {
               <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
                 <div className='w-[17vw] h-[auto]'>
                   <Image
-                    src='/images/SignUp.svg'
+                    src='/images/Search.svg'
                     alt='bookends demo image iphone14'
                     width='349'
                     height='716'
