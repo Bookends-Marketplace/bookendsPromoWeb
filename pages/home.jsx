@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import Nav from '../components/Nav';
 import AnimatedSection from '../components/AnimatedSection';
 import Image from 'next/image';
@@ -7,13 +7,28 @@ import { motion } from 'framer-motion';
 
 
 const NewHome = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const darkModeSetting = localStorage.getItem('darkMode');
-    if (darkModeSetting === 'enabled') {
-      document.body.classList.add('dark-mode');
-    }
+    // Function to update state based on the presence of 'dark-mode' class
+    const updateDarkMode = () => {
+      setIsDarkMode(document.body.classList.contains('dark-mode'));
+    };
+
+    // Check dark mode on initial render
+    updateDarkMode();
+
+    // Event listener to update state whenever the class changes
+    const observer = new MutationObserver(updateDarkMode);
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    // Clean up the observer on unmount
+    return () => observer.disconnect();
   }, []);
+
+  const getImageSrc = (imageName) => {
+    return isDarkMode ? `/images/${imageName}Dark.svg` : `/images/${imageName}.svg`;
+  };
 
   
 
@@ -45,7 +60,7 @@ const NewHome = () => {
                 <div className='visible sm:hidden'>
                   <div className='ml-auto mr-auto flex-grow w-[60vw] h-[auto]'>
                     <Image
-                      src='/images/Search.svg'
+                      src={getImageSrc('Search')}
                       alt='bookends demo image iphone14'
                       width={200}  
                       height={424} 
@@ -63,7 +78,7 @@ const NewHome = () => {
                  
                 </p>
                 <p
-                 className={`pr-2 sm:p-0 sm:grow-[.05] md:grow-[.2] lg:grow font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[2.05vw] sm:w-[95%] sm:mb-3`} 
+                 className='mb-4 sm:mb-5 md:mb-6 lg:mb-8 font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[2.05vw] w-[95%]'
                 >
                   Sign up now for early access!
                 </p>
@@ -73,7 +88,7 @@ const NewHome = () => {
               <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
                 <div className='hidden sm:block sm:w-2/3 lg:w-3/4 xl:w-4/5'>
                   <Image
-                    src='/images/Search.svg'
+                    src={getImageSrc('Search')}
                     alt='bookends demo image iphone14'
                     width={600} 
                     height={1200} 
@@ -84,7 +99,7 @@ const NewHome = () => {
                 {/* <div className='w-[17vw] h-[auto]'> */}
                 <div className='hidden sm:block sm:w-2/3 lg:w-3/4 xl:w-4/5'>
                   <Image
-                    src='/images/ItemPage.svg'
+                    src={getImageSrc('ItemPage')}
                     alt='bookends demo image iphone13'
                     width={600} 
                     height={1200} 
