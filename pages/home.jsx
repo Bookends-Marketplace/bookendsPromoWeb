@@ -32,7 +32,7 @@ const NewHome = () => {
                 <div className='visible sm:hidden'>
                   <div className='ml-auto mr-auto flex-grow w-[40vw] h-[auto]'>
                     <Image
-                      src='/images/iPhone14.png'
+                      src='/images/ItemPage.svg'
                       alt='bookends demo image iphone14'
                       width='183'
                       height='389'
@@ -56,7 +56,7 @@ const NewHome = () => {
               <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
                 <div className='w-[17vw] h-[auto]'>
                   <Image
-                    src='/images/iPhone14.png'
+                    src='/images/SignUp.svg'
                     alt='bookends demo image iphone14'
                     width='349'
                     height='716'
@@ -66,7 +66,7 @@ const NewHome = () => {
                 </div>
                 <div className='w-[17vw] h-[auto]'>
                   <Image
-                    src='/images/iPhone13.png'
+                    src='/images/ItemPage.svg'
                     alt='bookends demo image iphone13'
                     width='349'
                     height='716'

@@ -40,9 +40,9 @@ const Nav = () => {
                             Contact 
                         </div>
                     </Link> 
-                    <button onClick={toggleDarkMode}>
+                    {/* <button onClick={toggleDarkMode}>
                         <MdBrightness4 />
-                    </button>
+                    </button> */}
                 </div>
             </div>
     );
