@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import Nav from '../components/Nav';
 import AnimatedSection from '../components/AnimatedSection';
 import Image from 'next/image';
@@ -7,6 +7,14 @@ import { motion } from 'framer-motion';
 
 
 const NewHome = () => {
+
+  useEffect(() => {
+    const darkModeSetting = localStorage.getItem('darkMode');
+    if (darkModeSetting === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+  }, []);
+
     return (
         <>
           <Nav />

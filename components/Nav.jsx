@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import '../app/globals.css';
 import { MdBrightness4 } from 'react-icons/md';
@@ -40,9 +42,9 @@ const Nav = () => {
                             Contact 
                         </div>
                     </Link> 
-                    {/* <button onClick={toggleDarkMode}>
+                    <button onClick={toggleDarkMode}>
                         <MdBrightness4 />
-                    </button> */}
+                    </button>
                 </div>
             </div>
     );
