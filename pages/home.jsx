@@ -3,6 +3,7 @@ import Nav from '../components/Nav';
 import AnimatedSection from '../components/AnimatedSection';
 import Image from 'next/image';
 import Subscribe from '../components/Subscribe';
+import { motion } from 'framer-motion';
 
 
 const NewHome = () => {
@@ -13,16 +14,21 @@ const NewHome = () => {
             <main className='min-h-screen flex mt-12 ' >
               <div className='w-[2vw] sm:w-[9vw]'></div>
               <div className='flex flex-col h-screen justify-around w-full md:w-4/9'>
-                <h2
-                  className={` font-raleway -mt-2 text-[7.7vw] font-bold  sm:mb-1 sm:text-[5vw] font-bold mb-3`}
-                >
-                  Create. Save. Sustain.
-                </h2>
-                <h2
-                  className={` font-raleway font-light text-[4.2vw] -mt-1 mb-4 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow`}
-                >
-                  Your Creative Marketplace.
-                </h2>
+                <motion.h1 
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    className='font-raleway -mt-2 text-[5vw] font-bold  sm:mb-1 sm:text-[3.5vw] font-bold mb-3'>
+                    Create. Save. Sustain.
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                    className='font-raleway font-light text-[4.2vw] -mt-1 mb-4 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow'>
+                        Your Creative Marketplace.
+                    {/* Join the creative marketplace where professionals and beginners alike find, sell, and share quality gear. */}
+                </motion.p>
                 <div className='visible sm:hidden'>
                   <div className='ml-auto mr-auto flex-grow w-[40vw] h-[auto]'>
                     <Image
@@ -77,49 +83,3 @@ const NewHome = () => {
 
 export default NewHome;
 
-
-// import Nav from '../components/Nav';
-// import AnimatedSection from '../components/AnimatedSection';
-// import '../app/globals.css';
-
-// import Image from 'next/image';
-// import Subscribe from '../components/Subscribe';
-// import { motion } from 'framer-motion';
-
-// const NewHome = () => {
-//     return (
-//         <>
-//             <Nav />
-//             <AnimatedSection>
-//                 <main className='min-h-screen flex flex-col justify-center items-center text-center mt-12 bg-cover bg-center'>
-//                     <div className="section-container"  style={{ minHeight: '40vh' }}>
-
-//                     <motion.h1 
-//                         initial={{ scale: 0.9, opacity: 0 }}
-//                         animate={{ scale: 1, opacity: 1 }}
-//                         transition={{ duration: 1 }}
-//                         className='text-6xl font-bold text-aliceblue mb-4'>
-//                         Empowering Creativity, Sustainably
-//                     </motion.h1>
-//                     <motion.p
-//                         initial={{ opacity: 0 }}
-//                         animate={{ opacity: 1 }}
-//                         transition={{ duration: 1.5 }}
-//                         className='text-xl text-aliceblue mb-6'>
-//                         Join the creative marketplace where professionals and beginners alike find, sell, and share quality gear.
-//                     </motion.p>
-//                     {/* <AnimatedSection> */}
-//                         <Subscribe />
-//                     {/* </AnimatedSection> */}
-//                     </div>
-//                     <AnimatedSection>
-//                         <h2 className='text-aliceblue text-6xl font-bold mb-4'>Our Mission</h2>
-//                         <p className='text-aliceblue text-3xl'>At Bookends, we connect productions and creatives...</p>
-//                     </AnimatedSection>
-//                 </main>
-//             </AnimatedSection>
-//         </>
-//     );
-// };
-
-// export default NewHome;

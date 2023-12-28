@@ -9,27 +9,28 @@ const Contact = () => {
         <>
             <Nav />
             <div className='flex flex-col items-center justify-center p-4'>
-                <AnimatedSection>
+            {/* <div className='flex flex-col items-center justify-center p-4 snap-y snap-mandatory' style={{ overflowY: 'scroll', height: '100vh' }}> Enable vertical snapping */}
+                <AnimatedSection className='snap-center'>
                     <h1 className='text-aliceblue text-6xl font-bold mb-4'>Reach Out!</h1>
                     <p className='text-aliceblue text-5xl mb-8'>We're reimagining the way creative gear is shared and sustained.</p>
                 </AnimatedSection>
 
-                <AnimatedSection>
+                <AnimatedSection className='snap-center'>
                     <h2 className='text-aliceblue text-6xl font-bold mb-4'>Our Mission</h2>
                     <p className='text-aliceblue text-3xl'>At Bookends, we connect productions and creatives...</p>
                 </AnimatedSection>
 
-                <AnimatedSection>
+                <AnimatedSection className='snap-center'>
                     <h2 className='text-aliceblue text-6xl font-bold mb-4'>For Productions</h2>
                     <p className='text-aliceblue text-3xl'>Efficiently manage your inventory...</p>
                 </AnimatedSection>
 
-                <AnimatedSection>
+                <AnimatedSection className='snap-center'>
                     <h2 className='text-aliceblue text-6xl font-bold mb-4'>For Creatives</h2>
                     <p className='text-aliceblue text-3xl'>Discover deals and unique finds...</p>
                 </AnimatedSection>
 
-                <AnimatedSection>
+                <AnimatedSection className='snap-center'>
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

@@ -1,7 +1,15 @@
 import Link from 'next/link';
 import '../app/globals.css';
+import { MdBrightness4 } from 'react-icons/md';
+
 
 const Nav = () => {
+    const toggleDarkMode = () => {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    };
+
     return (
         <div className='p-4 flex justify-between items-center'>
                 <Link href="/home" passHref>
@@ -32,6 +40,9 @@ const Nav = () => {
                             Contact 
                         </div>
                     </Link> 
+                    <button onClick={toggleDarkMode}>
+                        <MdBrightness4 />
+                    </button>
                 </div>
             </div>
     );

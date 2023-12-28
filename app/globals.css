@@ -9,6 +9,9 @@
   /* --foreground-rgb: 0, 0, 0; */
   --background-start-rgb: #f67570;
   --background-end-rgb: rgb(246, 117, 112);
+   /* New dark mode colors */
+   --background-dark-start: #2D2D2D;
+   --background-dark-end: #1A1A1A;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +28,13 @@ body {
   color: aliceblue; 
   font-family: 'Raleway', sans-serif;
 }
+
+/* globals.css */
+body.dark-mode {
+  background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
+  color: #E0E0E0;
+}
+
 
 @layer utilities {
   @layers responsive {
@@ -56,4 +66,14 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column; /* To stack children vertically */
+}
+
+.snap-container {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  scroll-snap-align: center;
 }
