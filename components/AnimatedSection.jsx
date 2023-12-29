@@ -1,10 +1,10 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
-const AnimatedSection = ({ children, fullPage }) => {
+const AnimatedSection = ({ children }) => {
     const [ref, inView] = useInView({
         // triggerOnce: true,
-        threshold: 0.6, // Adjust this to control when the animation triggers
+        threshold: 0.1, // Adjust this to control when the animation triggers
     });
 
     return (

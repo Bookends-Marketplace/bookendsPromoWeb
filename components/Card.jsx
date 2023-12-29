@@ -16,7 +16,7 @@ const Card = ({ question, answer }) => {
                     <span className='text-lg font-medium font-raleway text-gray-800'>{question}</span>
                 </div>
                 <div className={`mt-4 text-gray-600 font-raleway transition-all ease-in-out ${isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}
-                    style={{ transitionDuration: isOpen ? '1500ms' : '500ms' }}
+                    style={{ transitionDuration: isOpen ? '1500ms' : '700ms' }}
                 >
                     {answer}
                 </div>

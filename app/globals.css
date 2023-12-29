@@ -144,10 +144,13 @@ button:hover {
   display: flex;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow rounded corners */
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0); /* Subtle gradient */
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
