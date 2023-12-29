@@ -36,7 +36,7 @@ const Contact = () => {
                             <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='name'>
                                 Name
                             </label>
-                            <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='name' type='text' placeholder='Your Name'/>
+                            <input className='input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='name' type='text' placeholder='Your Name'/>
                         </div>
 
                         {/* Email Field */}
@@ -44,7 +44,7 @@ const Contact = () => {
                             <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='email'>
                                 Email
                             </label>
-                            <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='email' type='email' placeholder='Your Email'/>
+                            <input className='input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='email' type='email' placeholder='Your Email'/>
                         </div>
 
                         {/* Subject Field */}
@@ -52,7 +52,7 @@ const Contact = () => {
                                 <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='subject'>
                                     Subject
                                 </label>
-                                <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='subject' type='text' name='subject' placeholder='Subject'/>
+                                <input className='input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='subject' type='text' name='subject' placeholder='Subject'/>
                             </div>
 
                         {/* Message Field */}
@@ -60,7 +60,7 @@ const Contact = () => {
                             <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='message'>
                                 Message
                             </label>
-                            <textarea className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='message' placeholder='Your Message'></textarea>
+                            <textarea className='input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='message' placeholder='Your Message'></textarea>
                         </div>
 
                         {/* Submit Button */}

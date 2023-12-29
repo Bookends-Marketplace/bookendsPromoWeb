@@ -91,13 +91,6 @@ body.dark-mode .link-hover-effect-dark:hover {
   }
 }
 
-/* Focus Styles for Inputs and Textareas */
-input:focus, textarea:focus {
-  outline: none;
-  border-color: #f55350;
-  box-shadow: 0 0 0 2px rgba(245, 83, 80, 0.4);
-}
-
 /* Button Hover Effect */
 button:hover {
   background-color: #f55350;
@@ -154,3 +147,14 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.input {
+  color: #4A4A4A; /* Example color, adjust as needed */
+  font-family: 'Raleway', sans-serif;
+  /* Add other styling as needed */
+}
+
+.input:focus {
+  color: #333333; /* Darker color on focus for better contrast */
+  border-color: #f55350; /* Your brand's accent color */
+  /* Other focus styles */
+}

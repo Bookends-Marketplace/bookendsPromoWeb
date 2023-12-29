@@ -31,14 +31,14 @@ export default function Subscribe() {
               <input
                 type='text'
                 name='FNAME'
-                className={`placeholder-${raleway.variable} mb-4 placeholder-font-raleway placeholder:font-light sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:mr-4  sm:w-[20vw] sm:w-[17vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email text`}
+                className={`input placeholder-${raleway.variable} mb-4 placeholder-font-raleway placeholder:font-light sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:mr-4  sm:w-[20vw] sm:w-[17vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email text`}
                 id='mce-FNAME'
                 placeholder='Name'
               />
               <input
                 type='email'
                 name='EMAIL'
-                className={`placeholder-${raleway.variable} placeholder-font-raleway placeholder:font-light mb-4 sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:w-[27vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email`}
+                className={`input placeholder-${raleway.variable} placeholder-font-raleway placeholder:font-light mb-4 sm:placeholder:text-[2.3vw] px-[8.3vw] lg:placeholder:translate-y-1 sm:p-[2.6vw] rounded-full h-[9vw] w-[60vw] sm:w-[27vw] sm:h-[5vw] focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent text-[4.5vw] sm:text-[1.5vw] required email`}
                 id='mce-EMAIL'
                 required
                 placeholder='Email address'
