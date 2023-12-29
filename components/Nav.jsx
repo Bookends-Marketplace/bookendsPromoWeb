@@ -7,24 +7,10 @@ import { MdBrightness4 } from 'react-icons/md';
 import { CgMenuRight, CgClose } from 'react-icons/cg';
 
 const Nav = () => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    // const toggleDarkMode = () => {
-    //     document.body.classList.toggle('dark-mode');
-    //     const isDarkMode = document.body.classList.contains('dark-mode');
-    //     localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
-    // };
-
-    // const toggleMenu = () => {
-    //     setIsMenuOpen(!isMenuOpen);
-    // };
-
-    // const renderMenuIcon = () => {
-    //     return isMenuOpen ? <CgClose className='text-2xl text-aliceblue' /> : <CgMenuRight className='text-2xl text-aliceblue' />;
-    // };
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDarkMode, setIsDarkMode] = useState(false);
+
+  
 
     const toggleDarkMode = () => {
         document.body.classList.toggle('dark-mode');
@@ -33,12 +19,15 @@ const Nav = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        console.log("Menu state after toggle:", !isMenuOpen)
     };
 
     const renderMenuIcon = () => {
         const iconClass = isDarkMode ? 'text-gradient-dark' : 'text-aliceblue';
+        console.log("Is menu open?", isMenuOpen); 
         return isMenuOpen ? <CgClose className={`text-2xl ${iconClass}`} /> : <CgMenuRight className={`text-2xl ${iconClass}`} />;
     };
+ 
 
     return (
         <div className='p-4 flex justify-between items-center'>
@@ -50,6 +39,7 @@ const Nav = () => {
                         >
                         bookends
                         </h1>
+                        
                     </div>
                 </Link>
 
@@ -70,7 +60,7 @@ const Nav = () => {
                             About 
                         </div>
                     </Link> 
-                    <Link href="/about#contact" passHref>
+                    <Link href="/contact" passHref>
                         <div 
                             className='text-aliceblue font-semibold text-xl font-raleway'
                             style={{ fontFamily: 'Raleway, sans-serif' }}
@@ -106,14 +96,11 @@ const Nav = () => {
                                 About
                             </div>
                         </Link>
-                        <Link href="/about#contact" passHref>
+                        <Link href="/contact" passHref>
                             <div className='text-aliceblue font-semibold text-xl font-raleway mb-4 cursor-pointer'>
                                 Contact
                             </div>
                         </Link>
-                        <button onClick={toggleDarkMode} className='cursor-pointer'>
-                            <MdBrightness4 className='text-2xl text-aliceblue' />
-                        </button>
                     </div>
                 )}
             </div>

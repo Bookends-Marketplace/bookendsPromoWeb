@@ -2,7 +2,6 @@ import {useRef, useEffect} from 'react';
 import Nav from '../components/Nav';
 import '../app/globals.css';
 import AnimatedSection from '../components/AnimatedSection';
-import Contact from '../components/contact';
 
 const About = () => {
     const contactRef = useRef(null);
@@ -31,7 +30,7 @@ const About = () => {
 
                 <AnimatedSection className='snap-center'>
                     <h2 className='text-aliceblue text-6xl font-bold mb-4'>For Productions</h2>
-                    <p className='text-aliceblue text-3xl'>Efficiently manage your inventory...</p>
+                    <p className='text-aliceblue text-3xl'>Efficiently manage your inventory, from prep to wrap...</p>
                 </AnimatedSection>
 
                 <AnimatedSection className='snap-center'>
@@ -39,9 +38,9 @@ const About = () => {
                     <p className='text-aliceblue text-3xl'>Discover deals and unique finds...</p>
                 </AnimatedSection>
                 </div>
-                <div ref={contactRef}>
+                {/* <div ref={contactRef}>
                     <Contact />
-                </div>
+                </div> */}
         </>
     );
 };
