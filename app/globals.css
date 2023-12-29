@@ -31,6 +31,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+
 /* Dark Mode Body Styles */
 body.dark-mode {
   background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
@@ -38,6 +39,8 @@ body.dark-mode {
   /* --button-bg: #525252; Dark mode button background */
   --button-text: #E0E0E0; /* Dark mode button text */
   --button-hover-bg: #676767; /* Dark mode button hover background */
+  --link-text-dark: #E0E0E0; /* Dark mode link text color */
+  --link-hover-bg-dark: #676767; /* Dark mode link hover background */
 }
 
 /* Dark Mode Button Styles */
@@ -49,6 +52,8 @@ body.dark-mode button {
 /* Dark Mode Button Hover Styles */
 body.dark-mode button:hover {
   background-color: var(--button-hover-bg);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
 }
 
 /* Dark Mode Link Styles */
@@ -59,6 +64,15 @@ body.dark-mode a {
 /* Dark Mode Scrollbar Thumb Styles */
 body.dark-mode .scrollbar-thumb {
   background-color: #4E4E4E; /* Darker scrollbar color */
+}
+
+.link-hover-effect-dark {
+  color: var(--link-text-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .link-hover-effect-dark:hover {
+  background-color: var(--link-hover-bg-dark);
 }
 
 /* Utilities for Responsive Design and Scrollbar Hiding */
@@ -87,7 +101,18 @@ input:focus, textarea:focus {
 /* Button Hover Effect */
 button:hover {
   background-color: #f55350;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
 }
+
+/* Link Hover Effect  */
+.link-hover-effect:hover {
+  background-color: #f55350; 
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+
 
 /* Section Container Styles */
 .section-container {
@@ -108,3 +133,21 @@ button:hover {
 .snap-section {
   scroll-snap-align: center;
 }
+
+
+
+/* Style your cards with more creative designs */
+.card {
+  margin-bottom: 30px; /* space between cards */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-bottom: 1px solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+

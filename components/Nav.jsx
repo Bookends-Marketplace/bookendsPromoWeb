@@ -32,9 +32,9 @@ const Nav = () => {
     return (
         <div className='p-4 flex justify-between items-center'>
                 <Link href="/home" passHref>
-                    <div className='flex items-center'>
+                    <div className='flex items-center '>
                         <h1 
-                            className='text-aliceblue font-semibold text-5xl ml-0 font-raleway]'
+                            className='text-aliceblue font-semibold text-5xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark'
                             style={{ maxWidth: '180px', maxHeight: '180px', fontSize: '32px', fontFamily: 'Raleway, sans-serif', letterSpacing: '1px' }}
                         >
                         bookends
@@ -46,7 +46,7 @@ const Nav = () => {
                 <div className=' hidden sm:flex space-x-6'>
                     <Link href="/faqs" passHref>
                         <div 
-                            className='text-aliceblue font-semibold text-xl font-raleway'
+                            className='text-aliceblue font-semibold text-xl font-raleway link-hover-effect link-hover-effect-dark'
                             style={{ fontFamily: 'Raleway, sans-serif' }}
                         >
                             FAQs
@@ -54,7 +54,7 @@ const Nav = () => {
                     </Link>
                     <Link href="/about" passHref>
                         <div 
-                            className='text-aliceblue font-semibold text-xl font-raleway'
+                            className='text-aliceblue font-semibold text-xl font-raleway link-hover-effect link-hover-effect-dark'
                             style={{ fontFamily: 'Raleway, sans-serif' }}
                         >
                             About 
@@ -62,7 +62,7 @@ const Nav = () => {
                     </Link> 
                     <Link href="/contact" passHref>
                         <div 
-                            className='text-aliceblue font-semibold text-xl font-raleway'
+                            className='text-aliceblue font-semibold text-xl font-raleway link-hover-effect link-hover-effect-dark'
                             style={{ fontFamily: 'Raleway, sans-serif' }}
                         >
                             Contact 
@@ -86,6 +86,17 @@ const Nav = () => {
                 {isMenuOpen && (
                     
                     <div className='absolute top-0 left-0 h-full w-full bg-gradient-to-b from-[#F67570] to-[#F55350] bg-opacity-90 z-10 flex flex-col items-center justify-center animate-fadeIn'>
+                        <Link href="/home" passHref>
+                            <div className='flex items-center '>
+                                <h1 
+                                    className='text-aliceblue font-semibold text-5xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark'
+                                    style={{ maxWidth: '180px', maxHeight: '180px', fontSize: '32px', fontFamily: 'Raleway, sans-serif', letterSpacing: '1px' }}
+                                >
+                                bookends
+                                </h1>
+                                
+                            </div>
+                        </Link>
                         <Link href="/faqs" passHref>
                             <div className='text-aliceblue font-semibold text-xl font-raleway mb-4 cursor-pointer'>
                                 FAQs
