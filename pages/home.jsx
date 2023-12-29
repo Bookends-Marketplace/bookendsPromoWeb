@@ -61,7 +61,7 @@ const NewHome = () => {
                   <div className='ml-auto mr-auto flex-grow w-[60vw] h-[auto]'>
                     <Image
                       src={getImageSrc('Search')}
-                      alt='bookends demo image iphone14'
+                      alt='bookends search page'
                       width={200}  
                       height={424} 
                       className='ml-auto mr-auto drop-shadow-2xl'
@@ -82,25 +82,25 @@ const NewHome = () => {
                 >
                   Sign up now for early access!
                 </p>
-                <Subscribe />
+                {/* <div className='w-full'> */}
+                  <Subscribe />
+                {/* </div> */}
               </div>
     
               <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
                 <div className='hidden sm:block sm:w-2/3 lg:w-3/4 xl:w-4/5'>
                   <Image
                     src={getImageSrc('Search')}
-                    alt='bookends demo image iphone14'
+                    alt='bookends search page'
                     width={600} 
                     height={1200} 
-                    // sizes='100vw'
                     className='relative drop-shadow-2xl right-[-5vw] top-[10.5%] md:right-[-5vw] md:top-[11.5%] lg:right-[-4vw] lg:top-[19%]'
                   />
                 </div>
-                {/* <div className='w-[17vw] h-[auto]'> */}
                 <div className='hidden sm:block sm:w-2/3 lg:w-3/4 xl:w-4/5'>
                   <Image
                     src={getImageSrc('ItemPage')}
-                    alt='bookends demo image iphone13'
+                    alt='bookends Item page'
                     width={600} 
                     height={1200} 
                     className='relative top-[6%] right-[1.5vw] md:top-[6%] md:right-[1.5vw] lg:top-[8%] lg:right-[1.5vw] drop-shadow-2xl -z-10'

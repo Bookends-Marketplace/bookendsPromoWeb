@@ -49,7 +49,10 @@ const Contact = () => {
                     >
                         {/* Contact Form */}
                         {/* Implement form fields here */}
-                        <form>
+                        <form
+                          action="https://formspree.io/f/mwkgkklb"
+                          method="POST"
+                        >
                         {/* Name Field */}
                         <div className='mb-4'>
                             <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='name'>
@@ -66,6 +69,14 @@ const Contact = () => {
                             <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='email' type='email' placeholder='Your Email'/>
                         </div>
 
+                        {/* Subject Field */}
+                            <div className='mb-4'>
+                                <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='subject'>
+                                    Subject
+                                </label>
+                                <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='subject' type='text' name='subject' placeholder='Subject'/>
+                            </div>
+
                         {/* Message Field */}
                         <div className='mb-6'>
                             <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='message'>
@@ -76,7 +87,7 @@ const Contact = () => {
 
                         {/* Submit Button */}
                         <div className='flex items-center justify-between'>
-                            <button className='bg-[#f67570] hover:bg-[#f55350] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='button'>
+                            <button className='bg-[#f67570] hover:bg-[#f55350] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='sumbit'>
                                 Send Message
                             </button>
                         </div>
