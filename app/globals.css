@@ -35,7 +35,7 @@ body {
 body.dark-mode {
   background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
   color: #E0E0E0;
-  --button-bg: #525252; /* Dark mode button background */
+  /* --button-bg: #525252; Dark mode button background */
   --button-text: #E0E0E0; /* Dark mode button text */
   --button-hover-bg: #676767; /* Dark mode button hover background */
 }

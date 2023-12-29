@@ -4,19 +4,40 @@ import { useState } from 'react';
 import Link from 'next/link';
 import '../app/globals.css';
 import { MdBrightness4 } from 'react-icons/md';
-import { CgMenuRight } from 'react-icons/cg';
+import { CgMenuRight, CgClose } from 'react-icons/cg';
 
 const Nav = () => {
+    // const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    // const toggleDarkMode = () => {
+    //     document.body.classList.toggle('dark-mode');
+    //     const isDarkMode = document.body.classList.contains('dark-mode');
+    //     localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    // };
+
+    // const toggleMenu = () => {
+    //     setIsMenuOpen(!isMenuOpen);
+    // };
+
+    // const renderMenuIcon = () => {
+    //     return isMenuOpen ? <CgClose className='text-2xl text-aliceblue' /> : <CgMenuRight className='text-2xl text-aliceblue' />;
+    // };
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
         document.body.classList.toggle('dark-mode');
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+        setIsDarkMode(!isDarkMode);
     };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const renderMenuIcon = () => {
+        const iconClass = isDarkMode ? 'text-gradient-dark' : 'text-aliceblue';
+        return isMenuOpen ? <CgClose className={`text-2xl ${iconClass}`} /> : <CgMenuRight className={`text-2xl ${iconClass}`} />;
     };
 
     return (
@@ -26,7 +47,6 @@ const Nav = () => {
                         <h1 
                             className='text-aliceblue font-semibold text-5xl ml-0 font-raleway]'
                             style={{ maxWidth: '180px', maxHeight: '180px', fontSize: '32px', fontFamily: 'Raleway, sans-serif', letterSpacing: '1px' }}
-                            // style={{ maxWidth: '180px', maxHeight: '180px'}}
                         >
                         bookends
                         </h1>
@@ -63,14 +83,19 @@ const Nav = () => {
                     </button>
                 </div>
 
-                <div className='sm:hidden'>
-                <button onClick={toggleMenu} className='cursor-pointer'>
-                    <CgMenuRight className='text-2xl text-aliceblue' />
+                <button onClick={toggleDarkMode} className='sm:hidden cursor-pointer'>
+                    <MdBrightness4 className='text-2xl text-aliceblue' />
                 </button>
-            </div>
+
+                <div className='sm:hidden'>
+                    <button onClick={toggleMenu} className='cursor-pointer'>
+                        {renderMenuIcon()}
+                    </button>
+                </div>
 
                 {isMenuOpen && (
-                    <div className='absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 z-10 flex flex-col items-center justify-center'>
+                    
+                    <div className='absolute top-0 left-0 h-full w-full bg-gradient-to-b from-[#F67570] to-[#F55350] bg-opacity-90 z-10 flex flex-col items-center justify-center animate-fadeIn'>
                         <Link href="/faqs" passHref>
                             <div className='text-aliceblue font-semibold text-xl font-raleway mb-4 cursor-pointer'>
                                 FAQs
