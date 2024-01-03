@@ -94,7 +94,7 @@ const Nav = () => {
                         <Link href="/home" passHref>
                             <div className='flex items-center '>
                                 <h1 
-                                    className='text-aliceblue font-semibold text-5xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark'
+                                    className='text-aliceblue font-semibold text-5xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark mb-8'
                                     style={{ maxWidth: '180px', maxHeight: '180px', fontSize: '32px', fontFamily: 'Raleway, sans-serif', letterSpacing: '1px' }}
                                 >
                                 bookends
