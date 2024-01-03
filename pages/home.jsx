@@ -37,25 +37,25 @@ const NewHome = () => {
           <Nav />
           <AnimatedSection>
             <main 
-            className='min-h-screen flex mt-8 no-scrollbar' 
+            className='min-h-screen flex no-scrollbar' 
             style={{
               overflow: 'hidden',
             }} >
-              <div className='w-[2vw] sm:w-[9vw]'></div>
-              <div className='flex flex-col h-screen justify-around w-full md:w-4/9'>
+              {/* <div className='w-[2vw] sm:w-[9vw]'></div> */}
+              <div className='p-4 m:p-4 flex flex-col h-screen justify-around w-full md:w-4/9'>
                 <motion.h1 
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className='font-raleway -mt-2 text-[5vw] font-bold  sm:mb-1 sm:text-[3.5vw] font-bold mb-3'>
+                    className='font-raleway mt-2 text-[5vw] font-bold  sm:mb-1 sm:text-[3.5vw] font-bold mb-3'>
                     Create. Save. Sustain.
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
-                    className='font-raleway font-light text-[4.2vw] -mt-1 mb-4 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] lg:flex-grow'>
-                        Your Creative Marketplace.
+                    className='hidden sm:block font-raleway font-light text-[4.2vw] -mt-1 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] '>
+                    Your Creative Marketplace.
                 </motion.p>
                 <div className='visible sm:hidden'>
                   <div className='ml-auto mr-auto flex-grow w-[60vw] h-[auto]'>

@@ -65,7 +65,7 @@ const Contact = () => {
 
                         {/* Submit Button */}
                         <div className='flex items-center justify-between'>
-                            <button className='bg-[#f67570] hover:bg-[#f55350] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='sumbit'>
+                            <button className='body-button-bg bg-[#f67570] hover:bg-[#f55350] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='sumbit'>
                                 Send Message
                             </button>
                         </div>

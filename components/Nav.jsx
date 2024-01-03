@@ -19,22 +19,20 @@ const Nav = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-        console.log("Menu state after toggle:", !isMenuOpen)
     };
 
     const renderMenuIcon = () => {
         const iconClass = isDarkMode ? 'text-gradient-dark' : 'text-aliceblue';
-        console.log("Is menu open?", isMenuOpen); 
         return isMenuOpen ? <CgClose className={`text-2xl ${iconClass}`} /> : <CgMenuRight className={`text-2xl ${iconClass}`} />;
     };
  
 
     return (
-        <div className='p-4 flex justify-between items-center'>
+        <div className='p-4 flex justify-between items-center md:p-4'>
                 <Link href="/home" passHref>
                     <div className='flex items-center '>
                         <h1 
-                            className='text-aliceblue font-semibold text-5xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark'
+                            className='text-aliceblue font-semibold md:text-3xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark'
                             style={{ maxWidth: '180px', maxHeight: '180px', fontSize: '32px', fontFamily: 'Raleway, sans-serif', letterSpacing: '1px' }}
                         >
                         bookends
@@ -77,7 +75,7 @@ const Nav = () => {
                     <MdBrightness4 className='text-2xl text-aliceblue' />
                 </button>
 
-                <div className='sm:hidden'>
+                <div className='z-50 sm:hidden'>
                     <button onClick={toggleMenu} className='cursor-pointer'>
                         {renderMenuIcon()}
                     </button>
@@ -85,7 +83,14 @@ const Nav = () => {
 
                 {isMenuOpen && (
                     
-                    <div className='absolute top-0 left-0 h-full w-full bg-gradient-to-b from-[#F67570] to-[#F55350] bg-opacity-90 z-10 flex flex-col items-center justify-center animate-fadeIn'>
+                    <div 
+                        className='absolute top-0 left-0 h-full w-full  bg-opacity-90 z-10 flex flex-col items-center justify-center animate-fadeIn'
+                        style={{
+                            background: isDarkMode 
+                                ? 'linear-gradient(to bottom, #2D2D2D, #1A1A1A)' 
+                                : 'linear-gradient(to bottom, #F67570, #F55350)',
+                        }}
+                        >
                         <Link href="/home" passHref>
                             <div className='flex items-center '>
                                 <h1 

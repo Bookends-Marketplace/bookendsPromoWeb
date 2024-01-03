@@ -16,7 +16,6 @@
   --background-dark-end: #1A1A1A;
 }
 
-/* Dark Mode Specific Styles */
 @media (prefers-color-scheme: dark) {
   :root {
     --background-start-rgb: rgb(246, 117, 112);
@@ -31,12 +30,16 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/* hamburger {
+  z-index: 999;
+} */
+
 
 /* Dark Mode Body Styles */
 body.dark-mode {
   background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
   color: #E0E0E0;
-   --button-bg: #525252; /* Dark mode button background */
+   --body-button-bg: #525252; /* Dark mode button background */
   --button-text: #E0E0E0; /* Dark mode button text */
   --button-hover-bg: #676767; /* Dark mode button hover background */
   --link-text-dark: #E0E0E0; /* Dark mode link text color */
@@ -45,7 +48,7 @@ body.dark-mode {
 
 /* Dark Mode Button Styles */
 body.dark-mode button {
-  background-color: var(--button-bg);
+  /* background-color: var(--body-button-bg); */
   color: var(--button-text);
 }
 
@@ -84,7 +87,7 @@ body.dark-mode .link-hover-effect-dark:hover {
 
 /* Button Hover Effect */
 button:hover {
-  background-color: #f55350;
+  /* background-color: #f55350; */
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
 }
