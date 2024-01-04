@@ -41,13 +41,13 @@ const NewHome = () => {
             style={{
               overflow: 'hidden',
             }} >
-              {/* <div className='w-[2vw] sm:w-[9vw]'></div> */}
-              <div className='p-4 m:p-4 flex flex-col h-screen justify-around w-full md:w-4/9'>
+          <div className=' flex flex-col justify-center h-screen w-full md:w-4/9 p-4 md:mt-16'>
+                
                 <motion.h1 
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className='font-raleway mt-2 text-[5vw] font-bold  sm:mb-1 sm:text-[3.5vw] font-bold mb-3'>
+                    className='font-raleway text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-3'>
                     Create. Save. Sustain.
                 </motion.h1>
                 <motion.p
@@ -68,24 +68,20 @@ const NewHome = () => {
                     />
                   </div>
                 </div>
-    
-                <p
-                  className={`mb-4  mt-4 pr-2 sm:p-0 sm:grow-[.05] md:grow-[.2] lg:grow font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[2.05vw] sm:w-[95%] sm:mb-3`}
-                >
+
+                <p className='font-raleway font-light text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4'>
                   Whether you&apos;re lighting up your first scene or crafting
                   cinema-scale stories, <span className="font-bold">bookends</span> is your go-to marketplace. Here,
                   creatives of all calibers connect to buy and sell pre-loved gear. 
                  
                 </p>
-                <p
-                 className='mb-4 sm:mb-5 md:mb-6 lg:mb-8 font-raleway font-light text-[4vw] sm:text-[2.1vw] md:text-[2vw] lg:text-[2.05vw] w-[95%]'
-                >
-                  Sign up now for early access!
+                <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
+                <p className='font-raleway font-bold text-md text-center sm:text-left md:text-lg lg:text-2xl xl:text-3xl mb-2 md:mb-6'>
+                      Sign up now for early access!
                 </p>
-                {/* <div className='w-full'> */}
                   <Subscribe />
-                {/* </div> */}
-              </div>
+            </div>
+
     
               <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
                 <div className='hidden sm:block sm:w-2/3 lg:w-3/4 xl:w-4/5'>
