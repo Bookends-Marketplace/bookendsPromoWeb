@@ -6,7 +6,7 @@ import Subscribe from '../components/Subscribe';
 import { motion } from 'framer-motion';
 
 
-const NewHome = () => {
+const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -76,7 +76,10 @@ const NewHome = () => {
                  
                 </p>
                 <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
-                <p className='font-raleway font-bold text-md text-center sm:text-left md:text-lg lg:text-2xl xl:text-3xl mb-2 md:mb-6'>
+                <p 
+                  className='font-raleway font-bold text-md text-center sm:text-left md:text-lg lg:text-2xl xl:text-3xl mb-2 md:mb-6'
+                  style={{fontSize: '2vw'}}
+                >
                       Sign up now for early access!
                 </p>
                   <Subscribe />
@@ -110,5 +113,5 @@ const NewHome = () => {
       );
 };
 
-export default NewHome;
+export default Home;
 

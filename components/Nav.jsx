@@ -29,7 +29,7 @@ const Nav = () => {
 
     return (
         <div className='p-4 flex justify-between items-center md:p-4'>
-                <Link href="/home" passHref>
+                <Link href="/" passHref>
                     <div className='flex items-center '>
                         <h1 
                             className='text-aliceblue font-semibold md:text-3xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark'
@@ -91,7 +91,7 @@ const Nav = () => {
                                 : 'linear-gradient(to bottom, #F67570, #F55350)',
                         }}
                         >
-                        <Link href="/home" passHref>
+                        <Link href="/" passHref>
                             <div className='flex items-center '>
                                 <h1 
                                     className='text-aliceblue font-semibold text-5xl ml-0 font-raleway] link-hover-effect link-hover-effect-dark mb-8'
