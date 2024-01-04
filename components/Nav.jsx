@@ -5,6 +5,8 @@ import Link from 'next/link';
 import '../app/globals.css';
 import { MdBrightness4 } from 'react-icons/md';
 import { CgMenuRight, CgClose } from 'react-icons/cg';
+import { AiOutlinePlus } from 'react-icons/ai'; // Import Plus Icon
+
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ const Nav = () => {
 
     const renderMenuIcon = () => {
         const iconClass = isDarkMode ? 'text-gradient-dark' : 'text-aliceblue';
-        return isMenuOpen ? <CgClose className={`text-2xl ${iconClass}`} /> : <CgMenuRight className={`text-2xl ${iconClass}`} />;
+        return isMenuOpen ? <CgClose className={`text-2xl ${iconClass}`} /> : <AiOutlinePlus className={`text-2xl ${iconClass}`} />;
     };
  
 
@@ -71,11 +73,11 @@ const Nav = () => {
                     </button>
                 </div>
 
+                <div className='z-50 sm:hidden'>
                 <button onClick={toggleDarkMode} className='sm:hidden cursor-pointer'>
                     <MdBrightness4 className='text-2xl text-aliceblue' />
                 </button>
 
-                <div className='z-50 sm:hidden'>
                     <button onClick={toggleMenu} className='cursor-pointer'>
                         {renderMenuIcon()}
                     </button>
