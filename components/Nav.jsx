@@ -74,7 +74,7 @@ const Nav = () => {
                 </div>
 
                 <div className='z-50 sm:hidden'>
-                <button onClick={toggleDarkMode} className='sm:hidden cursor-pointer'>
+                <button onClick={toggleDarkMode} className='sm:hidden cursor-pointer mr-4'>
                     <MdBrightness4 className='text-2xl text-aliceblue' />
                 </button>
 

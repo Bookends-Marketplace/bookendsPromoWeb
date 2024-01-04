@@ -47,14 +47,18 @@ const Home = () => {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className='font-raleway text-3xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-3'>
+                    className='font-raleway font-bold mb-2 md:mb-3'
+                    style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', lineHeight: '1.2' }}
+                >
                     Create. Save. Sustain.
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
-                    className='hidden sm:block font-raleway font-light text-[4.2vw] -mt-1 sm:mb-5 text-[3.8vw] sm:text-[2.45vw] md:text-[2.45vw] sm:grow-[.1] md:grow-[.28] '>
+                    className='hidden sm:block font-raleway font-light -mt-1 sm:mb-5 sm:grow-[.1] md:grow-[.28]'
+                    style={{ fontSize: 'clamp(1.2rem, 2.45vw, 2rem)', lineHeight: '1.4' }}  
+                  >
                     Your Creative Marketplace.
                 </motion.p>
                 <div className='visible sm:hidden'>
@@ -69,17 +73,19 @@ const Home = () => {
                   </div>
                 </div>
 
-                <p className='font-raleway font-light text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4'>
-                  Whether you&apos;re lighting up your first scene or crafting
-                  cinema-scale stories, <span className="font-bold">bookends</span> is your go-to marketplace. Here,
-                  creatives of all calibers connect to buy and sell pre-loved gear. 
-                 
+                <p 
+                  className='font-raleway font-light mb-4'
+                  style={{ fontSize: 'clamp(1rem, 2.1vw, 1.8rem)', lineHeight: '1.6' }}
+                >
+                    Whether you&apos;re lighting up your first scene or crafting
+                    cinema-scale stories, <span className="font-bold">bookends</span> is your go-to marketplace. Here,
+                    creatives of all calibers connect to buy and sell pre-loved gear. 
                 </p>
                 <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
                 <p 
-                  className='font-raleway font-bold text-md text-center sm:text-left md:text-lg lg:text-2xl xl:text-3xl md:mb-6'
-                  style={{fontSize: '3vw'}}
-                >
+                  className='font-raleway font-bold text-md text-center sm:text-left md:mb-6'
+                  style={{ fontSize: 'clamp(1.5rem, 2vw, 2.5rem)', lineHeight: '1.4' }}
+                  >
                       Sign up now for early access!
                 </p>
                   <Subscribe />
