@@ -17,7 +17,7 @@ const Contact = () => {
                         className='text-center mb-8'
                     >
                         <h1 className='text-aliceblue text-6xl font-bold mb-4'>Get in Touch</h1>
-                        <p className='text-aliceblue text-xl'>We'd love to hear from you!</p>
+                        <p className='text-aliceblue text-xl'>We&apos;d love to hear from you!</p>
                     </motion.div>
 
                     <motion.div
