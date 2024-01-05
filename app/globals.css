@@ -1,28 +1,75 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+/* Importing Raleway font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Tailwind CSS Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Root CSS Variables */
 :root {
-  /* --foreground-rgb: 0, 0, 0; */
   --background-start-rgb: #f67570;
   --background-end-rgb: rgb(246, 117, 112);
+
+  /* New dark mode colors */
+  --background-dark-start: #2D2D2D;
+  --background-dark-end: #1A1A1A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --foreground-rgb: 255, 255, 255; */
     --background-start-rgb: rgb(246, 117, 112);
     --background-end-rgb: rgb(246, 117, 112);
   }
 }
 
+/* Body Styles */
 body {
-  background-color: rgb(246,117,112);
+  background: linear-gradient(135deg, rgb(246, 117, 112) 0%, rgb(245, 83, 80) 100%);
+  color: aliceblue; 
+  font-family: 'Raleway', sans-serif;
 }
 
+/* hamburger {
+  z-index: 999;
+} */
+
+
+/* Dark Mode Body Styles */
+body.dark-mode {
+  background: linear-gradient(135deg, var(--background-dark-start), var(--background-dark-end));
+  color: #E0E0E0;
+   --body-button-bg: #525252; /* Dark mode button background */
+  --button-text: #E0E0E0; /* Dark mode button text */
+  --button-hover-bg: #676767; /* Dark mode button hover background */
+  --link-text-dark: #E0E0E0; /* Dark mode link text color */
+  --link-hover-bg-dark: #676767; /* Dark mode link hover background */
+}
+
+/* Dark Mode Button Styles */
+body.dark-mode button {
+  /* background-color: var(--body-button-bg); */
+  color: var(--button-text);
+}
+
+/* Dark Mode Button Hover Styles */
+body.dark-mode button:hover {
+  background-color: var(--button-hover-bg);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+
+.link-hover-effect-dark {
+  color: var(--link-text-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .link-hover-effect-dark:hover {
+  background-color: var(--link-hover-bg-dark);
+}
+
+/* Utilities for Responsive Design and Scrollbar Hiding */
 @layer utilities {
   @layers responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
@@ -36,4 +83,72 @@ body {
         scrollbar-width: none;  /* Firefox */
     }
   }
+}
+
+/* Button Hover Effect */
+button:hover {
+  /* background-color: #f55350; */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+/* Link Hover Effect  */
+.link-hover-effect:hover {
+  background-color: #f55350; 
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+
+
+/* Section Container Styles */
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* To stack children vertically */
+}
+
+/* Snap Container for Scroll Snapping */
+.snap-container {
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+/* Snap Section for Individual Sections */
+.snap-section {
+  scroll-snap-align: center;
+}
+
+
+
+/* Style your cards with more creative designs */
+.card {
+  margin-bottom: 30px; /* space between cards */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-bottom: 1px solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow rounded corners */
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0); /* Subtle gradient */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.input {
+  color: #4A4A4A; /* Example color, adjust as needed */
+  font-family: 'Raleway', sans-serif;
+  /* Add other styling as needed */
+}
+
+.input:focus {
+  color: #333333; /* Darker color on focus for better contrast */
+  border-color: #f55350; /* Your brand's accent color */
+  /* Other focus styles */
 }
