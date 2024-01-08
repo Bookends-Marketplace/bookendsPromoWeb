@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import '../app/globals.css';
 import { MdBrightness4 } from 'react-icons/md';
@@ -10,13 +10,29 @@ import { AiOutlinePlus } from 'react-icons/ai'; // Import Plus Icon
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('darkMode') === 'true';
+        }
+        return false;
+    });
 
+
+    useEffect(() => {
+        // Apply the dark mode class if it's enabled in localStorage
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    }, [isDarkMode]);
   
 
     const toggleDarkMode = () => {
-        document.body.classList.toggle('dark-mode');
-        setIsDarkMode(!isDarkMode);
+        const newDarkModeState = !isDarkMode;
+        setIsDarkMode(newDarkModeState);
+        localStorage.setItem('darkMode', newDarkModeState);
+        document.body.classList.toggle('dark-mode', newDarkModeState);
     };
 
     const toggleMenu = () => {
