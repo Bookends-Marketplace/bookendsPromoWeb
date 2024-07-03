@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-const BUNDLE_ID = 'YOUR-APPLE-APP-BUNDLE-ID' // replace with your bundle ID
+const BUNDLE_ID = 'org.reactjs.native.example.bookendsmarketplace'; // replace with your bundle ID
 
 const association = {
   applinks: {
