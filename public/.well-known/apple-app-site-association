@@ -1,5 +1,3 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-
 const BUNDLE_ID = 'org.reactjs.native.example.bookendsmarketplace';
 const TEAM_ID = '9S4K5QK28B';
 
