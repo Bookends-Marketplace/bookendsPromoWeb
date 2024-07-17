@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bookends.app",
+      "sha256_cert_fingerprints":
+        ["0B:8A:21:6B:90:50:77:0B:B4:D4:D0:B2:8F:53:EF:00:21:F0:D7:2D:9D:80:15:2D:BF:87:CC:1E:89:5D:F5:EA"]
+    }
+  }
+]
