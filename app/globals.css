@@ -30,9 +30,12 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* hamburger {
-  z-index: 999;
-} */
+
+.no-scroll {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 
 
 /* Dark Mode Body Styles */

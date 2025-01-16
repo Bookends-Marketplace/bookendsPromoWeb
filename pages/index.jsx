@@ -37,17 +37,14 @@ const Home = () => {
           <Nav />
           <AnimatedSection>
             <main 
-            className='min-h-screen flex no-scrollbar' 
-            style={{
-              overflow: 'hidden',
-            }} >
+            className='min-h-screen flex no-scroll'>
           <div className=' flex flex-col justify-center h-screen w-full md:w-4/9 p-4 md:mt-16'>
                 
                 <motion.h1 
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1 }}
-                    className='font-raleway font-bold mb-2 md:mb-3'
+                    className='no-scrollbar font-raleway font-bold mb-2 md:mb-3'
                     style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', lineHeight: '1.2' }}
                 >
                     Create. Save. Sustain.
