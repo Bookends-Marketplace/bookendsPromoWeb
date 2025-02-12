@@ -73,7 +73,7 @@ const Home = () => {
                   className='font-raleway font-light mb-4'
                   style={{ fontSize: 'clamp(1rem, 2.1vw, 1.8rem)', lineHeight: '1.6' }}
                 >
-                    Whether you're starting a project, bringing an idea to life, or looking for inspiration, <span className="font-bold">bookends</span> helps creatives buy and sell the tools and materials they need.
+                    Whether you&apos;re starting a project, bringing an idea to life, or looking for inspiration, <span className="font-bold">bookends</span> helps creatives buy and sell the tools and materials they need.
                 </p>
                 <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
                 <div className="flex justify-center sm:justify-start">
