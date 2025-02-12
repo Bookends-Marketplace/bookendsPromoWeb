@@ -2,7 +2,6 @@ import {useEffect, useState} from 'react';
 import Nav from '../components/Nav';
 import AnimatedSection from '../components/AnimatedSection';
 import Image from 'next/image';
-import Subscribe from '../components/Subscribe';
 import { motion } from 'framer-motion';
 
 
@@ -47,7 +46,7 @@ const Home = () => {
                     className='no-scrollbar font-raleway font-bold mb-2 md:mb-3'
                     style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)', lineHeight: '1.2' }}
                 >
-                    Create. Save. Sustain.
+                    Fuel Your Creativity. Buy & Sell with Ease.
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -56,7 +55,7 @@ const Home = () => {
                     className='hidden sm:block font-raleway font-light -mt-1 sm:mb-5 sm:grow-[.1] md:grow-[.28]'
                     style={{ fontSize: 'clamp(1.2rem, 2.45vw, 2rem)', lineHeight: '1.4' }}  
                   >
-                    Your Creative Marketplace.
+                    The resale platform for creatives.
                 </motion.p>
                 <div className='visible sm:hidden'>
                   <div className='ml-auto mr-auto flex-grow w-[60vw] h-[auto]'>
@@ -74,18 +73,24 @@ const Home = () => {
                   className='font-raleway font-light mb-4'
                   style={{ fontSize: 'clamp(1rem, 2.1vw, 1.8rem)', lineHeight: '1.6' }}
                 >
-                    Whether you&apos;re lighting up your first scene or crafting
-                    cinema-scale stories, <span className="font-bold">bookends</span> is your go-to marketplace. Here,
-                    creatives of all calibers connect to buy and sell pre-loved gear. 
+                    Whether you're starting a project, bringing an idea to life, or looking for inspiration, <span className="font-bold">bookends</span> helps creatives buy and sell the tools and materials they need.
                 </p>
                 <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
-                <p 
-                  className='font-raleway font-bold text-md text-center sm:text-left md:mb-6'
-                  style={{ fontSize: 'clamp(1.5rem, 2vw, 2.5rem)', lineHeight: '1.4' }}
+                <div className="flex justify-center sm:justify-start">
+                  <a 
+                      href="https://apps.apple.com/us/app/bookends-marketplace/id6480121985" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
                   >
-                      Sign up now for early access!
-                </p>
-                  <Subscribe />
+                      <Image
+                          src="/images/app-store-badge.svg"
+                          alt="Download on the App Store"
+                          width={180}
+                          height={60}
+                          className="drop-shadow-lg"
+                      />
+                  </a>
+                </div>
             </div>
 
     
@@ -115,6 +120,3 @@ const Home = () => {
          </>
       );
 };
-
-export default Home;
-
