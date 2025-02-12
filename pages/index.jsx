@@ -87,7 +87,7 @@ const Home = () => {
                       className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow"
                   >
                       <Image
-                          src="/app-store-badge.svg"  // Ensure this is in the `public/` folder
+                          src="/images/app-store-badge.svg" 
                           alt="Download on the App Store"
                           width={180}
                           height={60}
