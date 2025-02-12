@@ -37,8 +37,8 @@ const Home = () => {
           <AnimatedSection>
             <main 
             className='min-h-screen flex no-scroll'>
-          <div className=' flex flex-col justify-center h-screen w-full md:w-4/9 p-4 md:mt-16'>
-                
+              <div className=' flex flex-col justify-center h-screen w-full md:w-4/9 p-4 md:mt-16'>
+                    
                 <motion.h1 
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -76,7 +76,7 @@ const Home = () => {
                     Whether you&apos;re starting a project, bringing an idea to life, or looking for inspiration, <span className="font-bold">bookends</span> helps creatives buy and sell the tools and materials they need.
                 </p>
                 <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
-                <div className="flex flex-col items-center sm:items-start gap-2 mt-3 p-4 bg-gray-100 dark:bg-gray-900 rounded-xl shadow-lg">
+                <div className="flex flex-col items-center sm:items-start gap-2 mt-2">
                   <p className="text-xl font-bold text-center sm:text-left text-black dark:text-white">
                       Get the app to start buying & selling today!
                   </p>
@@ -84,7 +84,7 @@ const Home = () => {
                       href="https://apps.apple.com/us/app/bookends-marketplace/id6480121985" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-5 py-3 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all"
+                      className="flex items-center gap-3 px-6 py-4 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all"
                   >
                       <Image
                           src="/images/app-store-badge.svg" 
@@ -95,10 +95,7 @@ const Home = () => {
                       />
                   </a>
                 </div>
-
-            </div>
-
-    
+              </div>
               <div className='hidden sm:visible sm:flex sm:mr-5 md:visible lg:visible xl:visisble'>
                 <div className='hidden sm:block sm:w-2/3 lg:w-3/4 xl:w-4/5'>
                   <Image
