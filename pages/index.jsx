@@ -77,7 +77,7 @@ const Home = () => {
                 </p>
                 {/* <div className='hidden sm:flex flex-grow'></div> This div will push the bottom elements up */}
                 <div className="flex flex-col items-center sm:items-start gap-2 my-8">
-                  <p className="text-xl font-bold text-center sm:text-left text-black dark:text-white">
+                  <p className="text-l font-bold text-center sm:text-left text-black dark:text-white">
                       Get the app to start buying & selling today!
                   </p>
                   <a 
