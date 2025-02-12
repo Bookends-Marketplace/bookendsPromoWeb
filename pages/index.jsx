@@ -76,22 +76,22 @@ const Home = () => {
                     Whether you&apos;re starting a project, bringing an idea to life, or looking for inspiration, <span className="font-bold">bookends</span> helps creatives buy and sell the tools and materials they need.
                 </p>
                 <div className='hidden sm:flex flex-grow'></div> {/* This div will push the bottom elements up */}
-                <div className="flex flex-col items-center sm:items-start gap-3 mt-6">
-                  <p className="text-lg font-semibold text-center sm:text-left text-black dark:text-white">
+                <div className="flex flex-col items-center sm:items-start gap-2 mt-3 p-4 bg-gray-100 dark:bg-gray-900 rounded-xl shadow-lg">
+                  <p className="text-xl font-bold text-center sm:text-left text-black dark:text-white">
                       Get the app to start buying & selling today!
                   </p>
                   <a 
                       href="https://apps.apple.com/us/app/bookends-marketplace/id6480121985" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-shadow"
+                      className="flex items-center gap-3 px-5 py-3 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-all"
                   >
                       <Image
                           src="/images/app-store-badge.svg" 
                           alt="Download on the App Store"
-                          width={180}
-                          height={60}
-                          className="w-[180px] h-auto"
+                          width={200}
+                          height={70}
+                          className="w-[200px] h-auto"
                       />
                   </a>
                 </div>
