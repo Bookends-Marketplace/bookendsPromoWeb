@@ -1,12 +1,22 @@
 import Card from "../components/Card";
 import Nav from '../components/Nav';
-import faqs from '../data/faqs.json';
+// import faqs from '../data/faqs.json';
+import fs from 'fs';
+import path from 'path';
 import '../app/globals.css';
 import AnimatedSection from "../components/AnimatedSection";
 
+export async function getStaticProps() {
+    const filePath = path.join(process.cwd(), 'data', 'faqs.json');
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    const faqs = JSON.parse(fileContents);
 
+    return {
+        props: { faqs }
+    };
+}
 
-const FAQSPage = () => {
+const FAQSPage = (faqs) => {
 
     return (
         <div className="flex flex-col min-h-screen">
