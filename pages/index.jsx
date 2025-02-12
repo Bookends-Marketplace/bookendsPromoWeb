@@ -77,8 +77,8 @@ const Home = () => {
                 </p>
                 {/* <div className='hidden sm:flex flex-grow'></div> This div will push the bottom elements up */}
                 <div className="flex flex-col items-center sm:items-start gap-2 my-8">
-                  <p className="text-l font-bold text-center sm:text-left text-black dark:text-white">
-                      Get the app to start buying & selling today!
+                  <p className="text-xl text-center sm:text-left text-black dark:text-white">
+                     Get the free app. Buy & sell today!
                   </p>
                   <a 
                       href="https://apps.apple.com/us/app/bookends-marketplace/id6480121985" 
